@@ -6,9 +6,9 @@ const Item = (props) => {
   return (
     <div className="item">
       <img src={img} alt={`${model} case`}/>
-      <div>{collection}</div>
+      <div className="item__collection">{collection}</div>
       <div>{model}</div>
-      <div>{price}</div>
+      <div className="item__price">{`$${price} USD`}</div>
     </div>
   )
 }
