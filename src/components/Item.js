@@ -1,3 +1,5 @@
+import '../styles/Item.css';
+
 const Item = (props) => {
   const { img, collection, model, price } = props;
 

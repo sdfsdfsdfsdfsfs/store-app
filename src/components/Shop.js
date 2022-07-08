@@ -1,3 +1,4 @@
+import '../styles/Shop.css';
 import { useState } from 'react';
 import ITEMS from '../assets/cases/ITEMS';
 import Item from './Item';

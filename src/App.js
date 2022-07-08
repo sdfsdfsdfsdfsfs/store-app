@@ -4,6 +4,9 @@ function App() {
   return (
     <div className="App">
       <Shop />
+      <ul>
+        <li>test</li>
+      </ul>
     </div>
   );
 }
