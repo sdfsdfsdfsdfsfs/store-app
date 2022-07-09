@@ -13,7 +13,7 @@ const InfoBar = () => {
         <span>VE Orders <strong>$50+</strong></span>
         <span>Outside VE <strong>$100+</strong></span>
       </div>
-      <div className="hidden">
+      <div className="info-bar__socials hidden">
         <i className="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-tiktok"></i>

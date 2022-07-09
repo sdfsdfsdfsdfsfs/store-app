@@ -3,9 +3,11 @@ import { useState } from 'react';
 import ITEMS from '../assets/cases/ITEMS';
 import Item from './Item';
 
+const multiItems = [...ITEMS, ...ITEMS, ...ITEMS];
+
 const Shop = () => {
   // eslint-disable-next-line
-  const [items, setItems] = useState(ITEMS);
+  const [items, setItems] = useState(multiItems);
 
   return (
     <div className="items">

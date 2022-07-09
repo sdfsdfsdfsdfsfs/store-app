@@ -3,7 +3,7 @@ import '../styles/Header.css'
 const Header = () => {
   return (
     <header>
-      <div className="logo">TheRageLab</div>
+      <div className="logo">The Rage Lab</div>
       <nav>
         <ul>
           <li>Cases</li>
@@ -12,14 +12,14 @@ const Header = () => {
           <li>About Us</li>
         </ul>
       </nav>
-      <div class="user">
+      <div className="user">
         <form>
           <label htmlFor="search">Search bar</label>
           <input type="text" id="search"></input>
-          <button type="button">i</button>
+          <button type="button"><i className="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <i>user</i>
-        <i>cart</i>
+        <i className="fa-solid fa-user"></i>
+        <i className="fa-solid fa-cart-shopping"></i>
       </div>
     </header>
   )

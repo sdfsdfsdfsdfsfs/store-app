@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Header from './components/Header';
 import InfoBar from './components/InfoBar';
 import Shop from './components/Shop';
@@ -8,6 +9,7 @@ function App() {
       <InfoBar />
       <Header />
       <Shop />
+      <Footer />
     </div>
   );
 }

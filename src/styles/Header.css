@@ -2,8 +2,8 @@ header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 20px 2vw;
-  background: white;
+  padding: 20px 3vw;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
