@@ -1,18 +1,31 @@
 .info-bar {
   display: flex;
-  justify-content: center;
-  padding: 12px 0;
-  background: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 3vw;
+  background: var(--accent-color);
   color: white;
-  font-size: 0.8rem;
-  gap: 24px;
 }
 
-.info-bar > strong {
+.info-bar__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.info-bar a {
+  color: white;
+}
+
+.info-bar__shipping {
+  display: flex;
+  gap: 24px;
+  font-size: 0.8rem;
+}
+
+.info-bar__shipping > strong {
   text-transform: uppercase;
 }
 
-strong {
-  color: var(--accent-color);
+.hidden {
+  visibility: hidden;
 }
-
