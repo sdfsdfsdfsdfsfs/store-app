@@ -1,0 +1,18 @@
+.info-bar {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  background: black;
+  color: white;
+  font-size: 0.8rem;
+  gap: 24px;
+}
+
+.info-bar > strong {
+  text-transform: uppercase;
+}
+
+strong {
+  color: var(--accent-color);
+}
+
