@@ -1,0 +1,33 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 20px 2vw;
+  background: white;
+}
+
+.logo {
+  font-weight: 800;
+  color: var(--accent-color);
+  font-size: 1.8rem;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+  font-weight: 600;
+}
+
+.user {
+  display: flex;
+  justify-self: end;
+}
+
+header label {
+  display: none;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+}
