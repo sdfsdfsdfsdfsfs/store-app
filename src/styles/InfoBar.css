@@ -29,3 +29,14 @@
 .hidden {
   visibility: hidden;
 }
+
+/* Icons hover */
+.info-bar i {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  transition: transform 0.3s;
+}
+
+.info-bar i:hover, .info-bar i:focus, .info-bar i:active {
+  transform: scale(1.2) translateZ(0);
+}
