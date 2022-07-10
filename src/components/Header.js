@@ -1,5 +1,8 @@
 import '../styles/Header.css'
 
+const setFocusStyle = (e) => e.target.parentElement.classList.add('search-form_focus');
+const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-form_focus');
+
 const Header = () => {
   return (
     <header>
@@ -12,12 +15,11 @@ const Header = () => {
           <li>About Us</li>
         </ul>
       </nav>
-      <div className="user">
-        <form>
-          <label htmlFor="search">Search bar</label>
-          <input type="text" id="search"></input>
+      <div className="header_icons">
+        <div className="search-form">
+          <input type="search" id="search" placeholder="Search..." onFocus={setFocusStyle} onBlur={removeFocusStyle}></input>
           <button type="button"><i className="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+        </div>
         <i className="fa-solid fa-user"></i>
         <i className="fa-solid fa-cart-shopping"></i>
       </div>

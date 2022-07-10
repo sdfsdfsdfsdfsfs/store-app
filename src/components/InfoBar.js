@@ -15,8 +15,8 @@ const InfoBar = () => {
       </div>
       <div className="info-bar__socials hidden">
         <i className="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-tiktok"></i>
+        <i className="fa-brands fa-facebook"></i>
+        <i className="fa-brands fa-tiktok"></i>
       </div>
     </div>
   )
