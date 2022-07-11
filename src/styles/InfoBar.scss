@@ -1,0 +1,40 @@
+@import './_shared.scss';
+
+.info-bar {
+  @include horizontal-flex(null, center, space-between);
+  padding: 12px 3vw;
+  background: $accent-color;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.info-bar__socials {
+  @include horizontal-flex(16px);
+}
+
+.info-bar__shipping {
+  @include horizontal-flex(24px);
+  font-size: 0.8rem;
+
+  > strong {
+    text-transform: uppercase;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+// Icons hover
+.info-bar i {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  transition: transform 0.3s;
+
+  &:hover, &:focus, &:active {
+    transform: scale(1.2) translateZ(0);
+  }
+}
