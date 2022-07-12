@@ -1,4 +1,4 @@
-@import './_shared.scss';
+@import './shared';
 
 .about {
   @include flex-col(null, center)
@@ -70,7 +70,11 @@
   max-width: 70%;
   padding: 0 3vw;
   text-align: center;
-  font-size: 1.1rem
+  font-size: 1.1rem;
+
+  strong {
+    color: $clr-primary;
+  }
 }
 
 .about > img {
@@ -82,7 +86,7 @@
   @include btn($clr-primary, $clr-neutral-light);
   margin: 0 0 80px 0;
 
-  &:hover {
+  &:hover, &:focus, &:active {
     opacity: 0.9;
   }
 }

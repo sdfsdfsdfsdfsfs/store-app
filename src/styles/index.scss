@@ -1,0 +1,29 @@
+@import './shared';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;600;700;800&display=swap');
+
+// General rules
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  color: $clr-neutral-dark;
+  font-family: 'Mulish', $font-family;
+}
+
+h1, h2, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}

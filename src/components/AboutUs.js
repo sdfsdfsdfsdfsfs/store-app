@@ -28,9 +28,9 @@ const AboutUs = () => {
         <img src={nezukoPattern} alt="phone case"/>
       </div>
       <div className="about__description">
-        <p>Founded in 2022, The Rage Lab set off on a mission to provide the dreamers of the world with super cool, affordable phone cases and accessories. Fast forward to now and we're accomplishing our mission... and more.</p>
+        <p>Founded in 2022, <strong>The Rage Lab</strong> set off on a mission to provide the dreamers of the world with super cool, affordable phone cases and accessories. Fast forward to now and we're accomplishing our mission... and more.</p>
         <p>We proudly hand-print and finish all of our products in Venezuela, which is why we're able to offer free personalisation on almost every product.</p>
-        <p>The Rage Lab is proudly a family run business, with a very hard-working team. We specialise in on-trend phone cases and accessories. Having sold over 500,000 cases worldwide, satisfying hundreds of customers on a daily basis, we're one of the fastest growing phone case & accessory retailers in the country.</p>
+        <p><strong>The Rage Lab</strong> is proudly a family run business, with a very hard-working team. We specialise in on-trend phone cases and accessories. Having sold over 500,000 cases worldwide, satisfying hundreds of customers on a daily basis, we're one of the fastest growing phone case & accessory retailers in the country.</p>
         <p>We always put our customers first, with a rapidly expanding customer happiness team, there's always somebody on hand to answer your query.</p>
       </div>
       {/* Replace img with logo once I get it */}
