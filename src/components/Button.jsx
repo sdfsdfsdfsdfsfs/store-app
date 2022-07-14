@@ -1,4 +1,4 @@
-import './Button.scss';
+import './styles/Button.scss';
 
 const Button = (props) => {
   const { scheme, hover, clickEvent, text } = props;

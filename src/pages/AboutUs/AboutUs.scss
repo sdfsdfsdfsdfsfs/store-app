@@ -1,4 +1,4 @@
-@import './shared';
+@import '../../assets/_shared.module.scss';
 
 .about {
   @include flex-col(null, center)
@@ -32,10 +32,6 @@
     max-width: 60ch;
     font-size: 1.15rem;
     line-height: 2.2rem;
-  }
-
-  button {
-    @include btn($clr-neutral-light, $clr-primary);
   }
 }
 
@@ -83,7 +79,6 @@
 }
 
 .about > button {
-  @include btn($clr-primary, $clr-neutral-light);
   margin: 0 0 80px 0;
 
   &:hover, &:focus, &:active {

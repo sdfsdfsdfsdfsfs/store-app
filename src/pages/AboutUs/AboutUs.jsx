@@ -1,7 +1,9 @@
-import '../styles/AboutUs.scss';
-import whiteClouds from '../assets/cases/white-clouds.png';
-import giornoPattern from '../assets/cases/giorno-pattern.png';
-import nezukoPattern from '../assets/cases/nezuko-pattern.png';
+import './AboutUs.scss';
+import scss from '../../assets/_shared.module.scss';
+import Button from '../../components/Button';
+import whiteClouds from '../../assets/cases/white-clouds.png';
+import giornoPattern from '../../assets/cases/giorno-pattern.png';
+import nezukoPattern from '../../assets/cases/nezuko-pattern.png';
 
 const scrollToInfo = () => {
   document.querySelector('.about__info').scrollIntoView({behavior: 'smooth'});
@@ -16,7 +18,7 @@ const AboutUs = () => {
           <strong>Love your rage, not your cage.</strong>
           <p>We are a Venezuela-based tech accessories company built for the bold. As big believers in self-expression, we wanted to embody just that for the playmakers who settle for nothing less than the best for their phone cases.</p>
         </div>
-        <button className="hvr-outline-out" onClick={scrollToInfo}>Meet The Rage Lab</button>
+        <Button text="Meet The Rage Lab" scheme={scss.schemePrimaryInv} hover="outline-light" clickEvent={scrollToInfo}/>
       </div>
       <div className="about__info">
         <h2>Designed in Maracaibo</h2>
@@ -35,7 +37,7 @@ const AboutUs = () => {
       </div>
       {/* Replace img with logo once I get it */}
       <img src={whiteClouds} alt="logo"></img>
-      <button>Shop Now</button>
+      <Button text="Shop Now" scheme={scss.schemePrimary} hover="glow"/>
     </main>
   )
 }

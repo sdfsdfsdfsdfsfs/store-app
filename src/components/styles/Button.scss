@@ -35,3 +35,11 @@
 .hvr-outline-light {
   @include hvr-outline($clr-neutral-light);
 }
+
+.hvr-glow {
+  transition: opacity 0.3s;
+  
+  &:hover, &:focus, &:active {
+    opacity: 0.9;
+  }
+}

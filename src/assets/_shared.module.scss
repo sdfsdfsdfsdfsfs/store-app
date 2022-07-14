@@ -32,8 +32,8 @@ $scheme-primary-inverted: $clr-primary, $clr-neutral-light;
 }
 
 :export {
-  clrNeutralLight: $clr-neutral-light;
-  clrPrimary: $clr-primary;
   schemeLight: $scheme-light;
   schemeDark: $scheme-dark;
+  schemePrimary: $scheme-primary;
+  schemePrimaryInv: $scheme-primary-inverted;
 }

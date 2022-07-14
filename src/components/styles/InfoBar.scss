@@ -3,7 +3,7 @@
 .info-bar {
   @include flex-row(null, center, space-between);
   padding: 12px 3vw;
-  background: $clr-secondary;
+  background: $clr-primary;
   color: $clr-neutral-light;
 
   a {
