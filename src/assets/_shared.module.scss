@@ -1,0 +1,39 @@
+// Fonts
+$font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+// Colors
+$clr-neutral-light: #ffffff;
+$clr-neutral-dark: #272624;
+$clr-primary: #d91d35;
+$clr-secondary: #242036;
+$clr-accent: #eed71c;
+$clr-input: #dfdfdf;
+
+// Color Schemes
+$scheme-light: $clr-neutral-dark, $clr-neutral-light;
+$scheme-dark: $clr-neutral-light, $clr-neutral-dark;
+$scheme-primary: $clr-neutral-light, $clr-primary;
+$scheme-primary-inverted: $clr-primary, $clr-neutral-light;
+
+// Mixins
+@mixin flex-row($gap: null, $align: null, $justify: null) {
+  display: flex;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin flex-col($gap: null, $align: null, $justify: null) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+:export {
+  clrNeutralLight: $clr-neutral-light;
+  clrPrimary: $clr-primary;
+  schemeLight: $scheme-light;
+  schemeDark: $scheme-dark;
+}

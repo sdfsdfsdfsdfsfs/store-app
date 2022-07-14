@@ -1,4 +1,4 @@
-import '../styles/InfoBar.scss';
+import './styles/InfoBar.scss';
 
 const InfoBar = () => {
   return (

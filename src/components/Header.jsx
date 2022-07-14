@@ -1,4 +1,4 @@
-import '../styles/Header.scss'
+import './styles/Header.scss'
 
 const setFocusStyle = (e) => e.target.parentElement.classList.add('search-form_focus');
 const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-form_focus');

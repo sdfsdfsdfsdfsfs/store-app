@@ -1,9 +1,9 @@
-@import './shared';
+@import '../../assets/_shared.module.scss';
 
 .info-bar {
   @include flex-row(null, center, space-between);
   padding: 12px 3vw;
-  background: $clr-neutral-dark;
+  background: $clr-secondary;
   color: $clr-neutral-light;
 
   a {
