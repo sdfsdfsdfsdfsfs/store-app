@@ -1,0 +1,16 @@
+@import '../../assets/_shared.module.scss';
+
+.home__banner {
+  @include flex-col(24px, flex-start, center);
+  height: 70vh;
+  padding: 40px 8vw;
+  background-image: url(../../assets/images/banner2.webp);
+  background-position: center;
+  background-size: cover;
+  color: $clr-neutral-light;
+
+  h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+  }
+}

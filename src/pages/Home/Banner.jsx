@@ -1,3 +1,4 @@
+import './Banner.scss';
 import Button from '../../components/Button';
 
 const Banner = (props) => {

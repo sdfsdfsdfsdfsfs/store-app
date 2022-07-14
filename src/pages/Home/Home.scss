@@ -1,87 +1,8 @@
 @import '../../assets/_shared.module.scss';
 
-.home__banner {
-  @include flex-col(24px, flex-start, center);
-  height: 70vh;
-  padding: 40px 8vw;
-  background-image: url(../../assets/images/banner2.webp);
-  background-position: center;
-  background-size: cover;
-  color: $clr-neutral-light;
-
-  h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
-  }
-}
-
 .home__collections {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 8px;
   margin-top: 8px;
-
-  > div {
-    height: 280px;
-    background-position: center;
-    background-size: cover;
-    @include flex-row(null, flex-end, center);
-    padding: 16px 0;
-    //a
-    position: relative;
-    cursor: pointer;
-
-    &::before {
-      transition: all 0.3s;
-      content: " ";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: inherit;
-      z-index: 0;
-    }
-
-    &:hover::before {
-      filter: brightness(0.6);
-    }
-
-
-    div {
-      background: white;
-      padding: 12px 16px;
-      font-weight: 600;
-      width: 70%;
-      box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.4);
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      //height: max-content;
-    }
-  }
-
-  .collection-1 {
-    background-image: url(../../assets/images/collections/naruto-collection.jpg);
-  }
-
-  .collection-2 {
-    background-image: url(../../assets/images/collections/kny-collection.jpg);
-  }
-
-  .collection-3 {
-    background-image: url(../../assets/images/collections/one-piece.jpg);
-  }
-
-  .collection-4 {
-    background-image: url(../../assets/images/collections/jjk-collection.jpg);
-  }
-
-  .collection-5 {
-    background-image: url(../../assets/images/collections/ghibli-collection.jpg);
-  }
-
-  .collection-6 {
-    background-image: url(../../assets/images/collections/dragon-ball.jpg);
-  }
 }
