@@ -1,0 +1,31 @@
+@import '../../assets/_shared.module.scss';
+
+.item {
+  @include flex-col(null, center);
+  text-align: center;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.item__collection {
+  font-weight: 600;
+  color: $clr-primary;
+  margin-bottom: 6px;
+}
+
+.item__name {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.item__price {
+  font-size: 0.9rem;
+}
