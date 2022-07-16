@@ -1,9 +1,7 @@
 import './AboutUs.scss';
 import scss from '../../assets/_shared.module.scss';
+import assets from './assets';
 import Button from '../../components/Button';
-import whiteClouds from '../../assets/cases/white-clouds.png';
-import giornoPattern from '../../assets/cases/giorno-pattern.png';
-import nezukoPattern from '../../assets/cases/nezuko-pattern.png';
 
 const scrollToInfo = () => {
   document.querySelector('.about__info').scrollIntoView({behavior: 'smooth'});
@@ -18,16 +16,16 @@ const AboutUs = () => {
           <strong>Love your rage, not your cage.</strong>
           <p>We are a Venezuela-based tech accessories company built for the bold. As big believers in self-expression, we wanted to embody just that for the playmakers who settle for nothing less than the best for their phone cases.</p>
         </div>
-        <Button text="Meet The Rage Lab" scheme={scss.schemePrimaryInv} hover="outline-light" clickEvent={scrollToInfo}/>
+        <Button text="Meet The Rage Lab" scheme={scss.schemePrimaryInv} hover="outline-light" onClick={scrollToInfo} />
       </div>
       <div className="about__info">
         <h2>Designed in Maracaibo</h2>
         <p>The Rage Lab is an online tech accesories retailer. We design, create and sell our cases internationally and exclusively at The Rage Lab.</p>
       </div>
       <div className="about__imgs">
-        <img src={whiteClouds} alt="phone case"/>
-        <img src={giornoPattern} alt="phone case"/>
-        <img src={nezukoPattern} alt="phone case"/>
+        <img src={assets.whiteClouds} alt="phone case"/>
+        <img src={assets.giornoPattern} alt="phone case"/>
+        <img src={assets.nezukoPattern} alt="phone case"/>
       </div>
       <div className="about__description">
         <p>Founded in 2022, <strong>The Rage Lab</strong> set off on a mission to provide the dreamers of the world with super cool, affordable phone cases and accessories. Fast forward to now and we're accomplishing our mission... and more.</p>
@@ -36,8 +34,8 @@ const AboutUs = () => {
         <p>We always put our customers first, with a rapidly expanding customer happiness team, there's always somebody on hand to answer your query.</p>
       </div>
       {/* Replace img with logo once I get it */}
-      <img src={whiteClouds} alt="logo"></img>
-      <Button text="Shop Now" scheme={scss.schemePrimary} hover="glow"/>
+      <img src={assets.whiteClouds} alt="logo"></img>
+      <Button text="Shop Now" scheme={scss.schemePrimary} hover="glow" />
     </main>
   )
 }
