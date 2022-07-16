@@ -36,6 +36,10 @@
   @include hvr-outline($clr-neutral-light);
 }
 
+.hvr-outline-primary {
+  @include hvr-outline($clr-primary);
+}
+
 .hvr-glow {
   transition: opacity 0.3s;
   

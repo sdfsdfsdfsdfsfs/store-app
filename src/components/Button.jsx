@@ -1,7 +1,7 @@
 import './styles/Button.scss';
 
 const Button = (props) => {
-  const { scheme, hover, clickEvent, text } = props;
+  const { scheme, hover, onClick, text } = props;
   const [color, background] = scheme.split(', ');
 
   const style = {
@@ -10,7 +10,7 @@ const Button = (props) => {
   }
 
   return (
-    <button className={`btn hvr-${hover}`} onClick={clickEvent} style={style}>{text}</button>
+    <button className={`btn hvr-${hover}`} onClick={onClick} style={style}>{text}</button>
   )
 }
 

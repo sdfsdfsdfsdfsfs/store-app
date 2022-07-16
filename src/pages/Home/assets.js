@@ -1,4 +1,4 @@
-import banner from '../../assets/images/banner2.webp';
+import banner from '../../assets/images/banners/banner2.webp';
 import naruto from '../../assets/images/collections/naruto.jpg';
 import jujutsu from '../../assets/images/collections/jujutsu.jpg';
 import op from '../../assets/images/collections/one-piece.jpg';

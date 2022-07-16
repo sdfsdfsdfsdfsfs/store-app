@@ -1,4 +1,5 @@
 import './styles/Header.scss'
+import { Link } from "react-router-dom";
 
 const setFocusStyle = (e) => e.target.parentElement.classList.add('search-form_focus');
 const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-form_focus');
@@ -6,13 +7,13 @@ const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-
 const Header = () => {
   return (
     <header>
-      <div className="logo">The Rage Lab</div>
+      <div className="logo"><Link to="/"><div>The Rage Lab</div></Link></div>
       <nav>
         <ul>
           <li className="hvr-underline">Cases</li>
           <li className="hvr-underline">Collections</li>
           <li className="hvr-underline">Accesories</li>
-          <li className="hvr-underline">About Us</li>
+          <Link to="/about-us"><li className="hvr-underline">About Us</li></Link>
         </ul>
       </nav>
       <div className="header__icons">
