@@ -5,11 +5,55 @@
 }
 
 .home__collections {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 8px;
+  @include flex-col(42px);
   width: 100%;
-  margin: 8px 0;
+  padding: 0 3vw;
+  margin-top: 56px;
+
+  > div:nth-child(1) {
+    @include flex-row(null, flex-end, space-between);
+    width: 100%;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    > div {
+      @include flex-row(10px);
+      color: $clr-primary;
+
+      span {
+        font-weight: 700;
+      }
+
+      i {
+        font-size: 0.55rem;
+        line-height: 1.4rem;
+      }
+    }
+  }
+
+  > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 16px;
+    width: 100%;
+
+    // Make grid track height same as width
+    &::before {
+      content: '';
+      width: 0;
+      padding-bottom: 100%;
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+    }
+
+    > *:first-child{
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+    }
+  }
 }
 
 .home__about {

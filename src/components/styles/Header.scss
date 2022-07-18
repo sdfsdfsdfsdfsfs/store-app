@@ -14,7 +14,7 @@ header {
 }
 
 .logo {
-  @include flex-row(null, null, start);
+  @include flex-row(null, null, flex-start);
   font-weight: 800;
   font-size: 1.8rem;
 

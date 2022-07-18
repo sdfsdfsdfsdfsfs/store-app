@@ -1,21 +1,15 @@
-import banner from '../../assets/images/banners/banner2.webp';
-import naruto from '../../assets/images/collections/naruto.jpg';
-import jujutsu from '../../assets/images/collections/jujutsu.jpg';
-import op from '../../assets/images/collections/one-piece.jpg';
-import demonSlayer from '../../assets/images/collections/demon-slayer.jpg';
-import dragonBall from '../../assets/images/collections/dragon-ball.jpg';
-import ghibli from '../../assets/images/collections/ghibli.jpg';
-import sharingan from '../../assets/images/cases/sharingan.png';
+import banner from '../../assets/images/banners/banner.webp';
+import collection1 from '../../assets/images/collections/naruto.jpeg';
+import collection2 from '../../assets/images/collections/demon3.jpg';
+import collection3 from '../../assets/images/collections/aot.webp';
+import phoneCase from '../../assets/images/cases/sharingan.png';
 
 const assets = {
   banner,
-  naruto,
-  jujutsu,
-  op,
-  demonSlayer,
-  dragonBall,
-  ghibli,
-  sharingan,
+  collection1,
+  collection2,
+  collection3,
+  phoneCase,
 }
 
 export default assets;

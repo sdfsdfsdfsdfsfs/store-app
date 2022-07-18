@@ -12,12 +12,16 @@ const Home = () => {
     <main className="home">
       <Banner text="Phone cases built for the bold" btnText="Shop Now" scheme={scss.schemeLight} hover="outline-light" banner={assets.banner} />
       <div className="home__collections">
-        <Collection text="Naruto" img={assets.naruto} />
-        <Collection text="Jujutsu Kaisen" img={assets.jujutsu} />
-        <Collection text="One Piece" img={assets.op} />
-        <Collection text="Demon Slayer" img={assets.demonSlayer} />
-        <Collection text="Dragon Ball" img={assets.dragonBall} />
-        <Collection text="Studio Ghibli" img={assets.ghibli} />
+        <div>
+          <div className="hidden"><span>View more</span><i className="fa-solid fa-angles-right"></i></div>
+          <h2>Popular Collections</h2>
+          <div><span>View more</span><i className="fa-solid fa-angles-right"></i></div>
+        </div>
+        <div>
+          <Collection text="Naruto" img={assets.collection1} />
+          <Collection text="Demon Slayer" img={assets.collection2} />
+          <Collection text="Attack on Titan" img={assets.collection3} />
+        </div>
       </div>
       <div className="home__about">
         <div>
@@ -25,7 +29,7 @@ const Home = () => {
           <p>Protective. Inspiring. Unlimited style.</p>
           <Button text="Learn More" scheme={scss.schemePrimaryInv} hover="outline-light" />
         </div>
-        <div><img src={assets.sharingan} alt="phone case"/></div>
+        <div><img src={assets.phoneCase} alt="phone case"/></div>
       </div>
       <div className="home__trending">
         <h2>Trending Now</h2>
