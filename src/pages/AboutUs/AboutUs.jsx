@@ -1,7 +1,7 @@
 import './AboutUs.scss';
 import scss from '../../assets/_shared.module.scss';
 import assets from './assets';
-import { useEffect } from 'react';
+import useDocTitle from '../../hooks/useDocTitle';
 import Button from '../../components/Button';
 
 const scrollToInfo = () => {
@@ -9,9 +9,7 @@ const scrollToInfo = () => {
 }
 
 const AboutUs = () => {
-  useEffect(() => {
-    document.title = 'About Us - The Rage Lab';
-  }, []);
+  useDocTitle('About Us');
 
   return (
     <main className="about">

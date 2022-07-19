@@ -2,16 +2,14 @@ import './Home.scss';
 import scss from '../../assets/_shared.module.scss';
 import assets from './assets';
 import cases from '../../data/cases';
-import { useEffect } from 'react';
+import useDocTitle from '../../hooks/useDocTitle';
 import Banner from './Banner';
 import Collection from './Collection';
 import Button from '../../components/Button';
 import Item from '../../components/Item';
 
 const Home = () => {
-  useEffect(() => {
-    document.title = 'The Rage Lab';
-  }, []);
+  useDocTitle();
 
   return (
     <main className="home">

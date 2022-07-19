@@ -3,8 +3,8 @@ import InfoBar from './components/InfoBar';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
-import Footer from './components/Footer';
 import ItemDetail from "./pages/ItemDetail/ItemDetail";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
         <InfoBar />
         <Header />
         <Routes>
-          <Route path="/a" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/" element={<ItemDetail />} />
+          <Route path="/a" element={<ItemDetail />} />
         </Routes>
         <Footer />
       </div>
