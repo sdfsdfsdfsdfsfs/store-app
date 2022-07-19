@@ -7,37 +7,37 @@ import sharingan from '../assets/images/cases/sharingan.png';
 
 const cases = [
   {
-    collection: 'Naruto',
+    id: 'na-01',
     name: 'White Clouds',
     price: 20,
     img: whiteClouds,
   },
   {
-    collection: "Jojo's Bizarre Adventures",
+    id: 'jj-01',
     name: 'Giorno Pattern',
     price: 20,
     img: giornoPattern,
   },
   {
-    collection: 'One Piece',
+    id: 'op-01',
     name: 'Luffy',
     price: 20,
     img: luffy,
   },
   {
-    collection: 'Spirited Away',
+    id: 'gh-01',
     name: 'No Face',
     price: 20,
     img: noFace,
   },
   {
-    collection: 'Demon Slayer',
+    id: 'ds-01',
     name: 'Nezuko Pattern',
     price: 20,
     img: nezukoPattern,
   },
   {
-    collection: 'Naruto',
+    id: 'na-02',
     name: 'Sharingan',
     price: 20,
     img: sharingan,
