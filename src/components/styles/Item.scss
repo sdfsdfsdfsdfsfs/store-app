@@ -1,5 +1,8 @@
 @import '../../assets/_shared.module.scss';
-
+.item-link {
+  text-decoration: none;
+  color: $clr-neutral-dark;
+}
 .item {
   @include flex-col(null, center);
   text-align: center;
