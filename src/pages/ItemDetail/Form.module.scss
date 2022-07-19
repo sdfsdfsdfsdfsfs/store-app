@@ -1,0 +1,22 @@
+@import '../../assets/_shared.module.scss';
+
+.form {
+  @include flex-col(24px);
+}
+
+.input {
+  @include flex-col(12px);
+
+  label {
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  select {
+    padding: 8px;
+    font-size: 1.05rem;
+    border: 1px solid $clr-input;
+    border-radius: 4px;
+    outline-color: $clr-primary;
+  }
+}

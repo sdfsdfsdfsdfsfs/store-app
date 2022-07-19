@@ -5,8 +5,8 @@ const InfoBar = () => {
     <div className="info-bar">
       <div className="info-bar__socials">
         <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hvr-grow"><i className="fa-brands fa-instagram"></i></a>
-        <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hvr-grow"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="hvr-grow"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hvr-grow"><i className="fa-brands fa-facebook"></i></a>
+        <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="hvr-grow"><i className="fa-brands fa-tiktok"></i></a>
       </div>
       <div className="info-bar__info">
         <strong>Free Shipping!</strong>

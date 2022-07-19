@@ -1,0 +1,40 @@
+const devices = {
+  apple: [
+    'iPhone 13 Pro Max',
+    'iPhone 13 Pro',
+    'iPhone 13',
+    'iPhone 12 Pro Max',
+    'iPhone 12 Pro',
+    'iPhone 12',
+    'iPhone 11 Pro Max',
+    'iPhone 11 Pro',
+    'iPhone 11',
+    'iPhone SE (2022)',
+    'iPhone Xs Max',
+    'iPhone Xs',
+    'iPhone XR',
+    'iPhone X',
+  ],
+  samsung: [
+    'Galaxy S22 Ultra',
+    'Galaxy S22+',
+    'Galaxy S22',
+    'Galaxy S21 Ultra',
+    'Galaxy S21+',
+    'Galaxy S21',
+    'Galaxy Note 20 Ultra',
+    'Galaxy S20 Ultra',
+    'Galaxy S20+',
+    'Galaxy S20',
+  ],
+  xiaomi: [
+    'Redmi Note 10 Pro',
+    'Redmi Note 10',
+    'Redmi Note 9 Pro',
+    'Redmi Note 9',
+    'Redmi Note 8 Pro',
+    'Redmi Note 8',
+  ],
+}
+
+export default devices;

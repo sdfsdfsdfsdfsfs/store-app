@@ -1,0 +1,43 @@
+@import '../../assets/_shared.module.scss';
+
+.input {
+  @include flex-col(12px);
+
+  label {
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  div {
+    @include flex-row(null, center, flex-start);
+    width: max-content;
+    padding: 2px;
+    border: 1px solid $clr-input;
+    border-radius: 4px;
+    width: clamp(80px, 20%, 200px);
+  }
+
+  button {
+    @include flex-row(null, center, center);
+    padding: 6px;
+    border: none;
+    background: $clr-neutral-light;
+
+    i {
+      color: $clr-primary;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 6px;
+    font-size: 1.05rem;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+
+  .focus {
+    outline: 2px solid $clr-primary;
+  }
+}

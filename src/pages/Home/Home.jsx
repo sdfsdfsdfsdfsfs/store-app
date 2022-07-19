@@ -2,12 +2,17 @@ import './Home.scss';
 import scss from '../../assets/_shared.module.scss';
 import assets from './assets';
 import cases from '../../data/cases';
+import { useEffect } from 'react';
 import Banner from './Banner';
 import Collection from './Collection';
 import Button from '../../components/Button';
 import Item from '../../components/Item';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'The Rage Lab';
+  }, []);
+
   return (
     <main className="home">
       <Banner text="Phone cases built for the bold" btnText="Shop Now" scheme={scss.schemeLight} hover="outline-light" banner={assets.banner} />

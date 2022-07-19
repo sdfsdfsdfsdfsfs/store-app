@@ -1,0 +1,40 @@
+@import '../../assets/_shared.module.scss';
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 6vw;
+  margin-bottom: 80px;
+}
+
+.img {
+  @include flex-row(null, center, center);
+
+  img {
+    width: 100%;
+  }
+}
+
+.info {
+  @include flex-col(32px, null, space-between);
+  padding: 40px 0;
+
+  > div {
+    @include flex-col(16px);
+  }
+}
+
+.collection {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $clr-primary;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.price {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
