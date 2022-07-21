@@ -1,5 +1,6 @@
 import './styles/Header.scss'
 import { Link } from "react-router-dom";
+import { openCart } from '../pages/Cart/Cart';
 
 const setFocusStyle = (e) => e.target.parentElement.classList.add('search-form_focus');
 const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-form_focus');
@@ -23,7 +24,7 @@ const Header = () => {
           <button type="button"><i className="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <i className="fa-solid fa-user"></i>
-        <i className="fa-solid fa-cart-shopping"></i>
+        <i className="fa-solid fa-cart-shopping" onClick={openCart}></i>
       </div>
     </header>
   )

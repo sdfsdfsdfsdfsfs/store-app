@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ItemDetail from "./pages/ItemDetail/ItemDetail";
+import Cart from "./pages/Cart/Cart";
 import Footer from './components/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/shop/cases/:id" element={<ItemDetail />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
+        <Cart />
         <Footer />
       </div>
     </BrowserRouter>
