@@ -1,8 +1,8 @@
 import styles from './QuantityInput.module.scss';
 import { useState } from 'react';
 
-const QuantityInput = () => {
-  const [quantity, setQuantity] = useState(1);
+const QuantityInput = (props) => {
+  const [quantity, setQuantity] = useState(props.value ? props.value : 1);
 
   const handleIncrement = () => (quantity < 20) ? setQuantity(quantity + 1) : null;
   const handleDecrement = () => (quantity > 1) ? setQuantity(quantity - 1) : null;

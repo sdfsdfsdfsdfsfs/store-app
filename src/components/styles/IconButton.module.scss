@@ -2,3 +2,23 @@
   border: none;
   padding: 6px 10px;
 }
+
+.hvr-rotate-45 {
+  i {
+    transition: transform 0.3s;
+  }
+
+  &:hover i {
+    transform: rotate(45deg);
+  }
+}
+
+.hvr-rotate-90 {
+  i {
+    transition: transform 0.3s;
+  }
+
+  &:hover i {
+    transform: rotate(90deg);
+  }
+}

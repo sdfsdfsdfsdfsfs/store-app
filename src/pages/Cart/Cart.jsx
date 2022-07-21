@@ -1,9 +1,10 @@
 import styles from './Cart.module.scss';
 import scss from '../../assets/_shared.module.scss';
-import whiteClouds from '../../assets/images/cases/white-clouds.png';
 import Overlay from './Overlay';
-import QuantityInput from '../ItemDetail/QuantityInput';
+import IconButton from '../../components/IconButton';
+import CartItem from './CartItem';
 import Button from '../../components/Button';
+import giornoPattern from '../../assets/images/cases/giorno-pattern.png';
 
 const openCart = () => {
   document.querySelector('#overlay').style.position = 'fixed';
@@ -18,40 +19,34 @@ const closeCart = () => {
   setTimeout(() => document.querySelector('#overlay').style.position = 'static', 500);
 }
 
+const item = {
+  collection: "Jojo's Bizarre Adventures",
+  name: 'Giorno Pattern',
+  price: 20,
+  img: giornoPattern,
+  device: 'iPhone 13',
+  quantity: 2,
+}
+
 const Cart = () => {
   return (
     <div>
       <Overlay onClick={closeCart}/>
       <div id="cart" className={styles.cart}>
         <div className={styles.header}>
-          <h2>My cart</h2>
-          <i className="fa-solid fa-xmark" onClick={closeCart}></i>
+          <IconButton scheme={scss.schemePrimaryInv} icon="fa-solid fa-angle-right" hover="rotate-45" onClick={closeCart} />
+          <h2>My Cart</h2>
+          <IconButton scheme={scss.schemeLight} icon="fa-solid fa-angle-right" />
         </div>
         <div className={styles.items}>
-          <div className={styles.item}>
-            <img src={whiteClouds} alt="case" />
-            <div>
-              <div className={styles.item__info}>
-                <div className={styles.item__name}>
-                  <span>White Clouds</span>
-                  <i className="fa-solid fa-xmark"></i>
-                </div>
-                <div>iPhone 13</div>
-                <div>Naruto</div>
-              </div>
-              <div className={styles.item__price}>
-                <QuantityInput />
-                <span>$50 USD</span>
-              </div>
-            </div>
-          </div>
+          <CartItem item={item} />
         </div>
         <div className={styles.summary}>
           <div><span>Subtotal</span><span>$150 USD</span></div>
           <div><span>Shipping</span><span>$40 USD</span></div>
           <div><span>Total</span><span>$190 USD</span></div>
         </div>
-        <div className={styles.btn}><Button text="Continue to checkout" scheme={scss.schemePrimary} hover="glow" /></div>
+        <div className={styles.btn}><Button text="Continue to Checkout" scheme={scss.schemePrimary} hover="glow" /></div>
       </div>
     </div>
   )

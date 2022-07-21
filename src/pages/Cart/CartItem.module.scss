@@ -1,0 +1,40 @@
+@import '../../assets/shared.module';
+
+.item {
+  @include flex-row(16px, center);
+
+  img {
+    width: 120px;
+  }
+
+  > div {
+    @include flex-col(12px);
+    width: 100%;
+  }
+}
+
+.info {
+  @include flex-col(4px);
+  font-size: 0.9rem;
+  color: #707070;
+}
+
+.name {
+  @include flex-row(null, center, space-between);
+
+  span {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: $clr-neutral-dark;
+  }
+}
+
+.price {
+  @include flex-row(null, center, space-between);
+  font-weight: 600;
+  font-size: 1.05rem;
+
+  > div {
+    width: 100px;
+  }
+}

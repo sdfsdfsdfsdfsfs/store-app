@@ -1,7 +1,7 @@
 import styles from './styles/IconButton.module.scss';
 
 const IconButton = (props) => {
-  const { scheme, icon, onClick } = props;
+  const { scheme, icon, hover, onClick } = props;
   const [color, background] = scheme.split(', ');
 
   const style = {
@@ -10,7 +10,7 @@ const IconButton = (props) => {
   }
 
   return (
-    <button className={styles.btn} style={style} onClick={onClick}>
+    <button className={`${styles.btn} ${styles[`hvr-${hover}`]}`} style={style} onClick={onClick}>
       <i className={icon}></i>
     </button>
   )
