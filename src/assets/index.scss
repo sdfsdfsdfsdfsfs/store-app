@@ -15,6 +15,17 @@ body {
   font-family: 'Mulish', $font-family;
 }
 
+.hide-scroll {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
 h1, h2, ul, p {
   margin: 0;
 }

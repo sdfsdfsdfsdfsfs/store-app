@@ -7,10 +7,15 @@
   position: fixed;
   top: 0;
   right: 0;
+  overflow-y: scroll;
   transition: width 0.5s;
 
   label {
     display: none;
+  }
+
+  > div {
+    width: 480px;
   }
 }
 
@@ -26,6 +31,7 @@
 }
 
 .items {
+  @include flex-col(40px);
   padding: 20px 2vw;
 }
 
