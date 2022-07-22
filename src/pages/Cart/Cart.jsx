@@ -1,7 +1,7 @@
 import styles from './Cart.module.scss';
 import scss from '../../assets/_shared.module.scss';
 import cartSample from '../../data/cartSample';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { closeCart } from './openCart';
 import Overlay from './Overlay';
 import IconButton from '../../components/IconButton';
@@ -11,21 +11,15 @@ import EmptyCart from './EmptyCart';
 const Cart = () => {
   const [items, setItems] = useState(cartSample);
 
-  const calcSubtotal = () => {
-    return items.reduce((prev, cur) => prev + cur.price, 0);
-  }
-
-  const [subtotal, setSubtotal] = useState(calcSubtotal);
-
   const removeItem = (e) => {
     setItems(items.filter((item, i) => {
       return i !== +e.target.attributes['data-index'].value;
     }));
   }
 
-  useEffect(() => {
-    setSubtotal(calcSubtotal);
-  }, [items]);
+  const summary = { subtotal: items.reduce((prev, cur) => prev + cur.price * cur.quantity, 0) };
+  summary.shipping = (summary.subtotal < 50) ? 10 : 0; 
+  summary.total = summary.subtotal + summary.shipping;
 
   return (
     <div>
@@ -36,7 +30,7 @@ const Cart = () => {
           <h2>My Cart</h2>
           <IconButton scheme={scss.schemeLight} icon="fa-solid fa-angle-right" />
         </div>
-        {items.length > 0 ? <CartContent items={items} subtotal={subtotal} removeItem={removeItem} /> : <EmptyCart />}
+        {items.length > 0 ? <CartContent items={items} summary={summary} removeItem={removeItem} /> : <EmptyCart />}
       </div>
     </div>
   )
