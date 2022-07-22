@@ -7,15 +7,16 @@
   position: fixed;
   top: 0;
   right: 0;
+  overflow-x: hidden;
   overflow-y: scroll;
   transition: width 0.5s;
 
-  label {
-    display: none;
+  > div {
+    width: 463px;
   }
 
-  > div {
-    width: 480px;
+  label {
+    display: none;
   }
 }
 
@@ -27,28 +28,5 @@
 
   button:nth-child(3) {
     visibility: hidden;
-  }
-}
-
-.items {
-  @include flex-col(40px);
-  padding: 20px 2vw;
-}
-
-.summary {
-  @include flex-col(16px);
-  padding: 20px 2vw;
-
-  div {
-    @include flex-row(null, center, space-between);
-    font-weight: 600;
-  }
-}
-
-.btn {
-  padding: 20px 2vw;
-
-  button {
-    width: 100%;
   }
 }

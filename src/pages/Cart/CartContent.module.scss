@@ -1,0 +1,30 @@
+@import '../../assets/shared.module';
+/*
+.content {
+  > div {
+    width: 463px;
+  }
+}*/
+
+.items {
+  @include flex-col(40px);
+  padding: 20px 2vw;
+}
+
+.summary {
+  @include flex-col(16px);
+  padding: 20px 2vw;
+
+  div {
+    @include flex-row(null, center, space-between);
+    font-weight: 600;
+  }
+}
+
+.btn {
+  padding: 20px 2vw;
+
+  button {
+    width: 100%;
+  }
+}
