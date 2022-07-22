@@ -1,6 +1,6 @@
 import './styles/Header.scss'
 import { Link } from "react-router-dom";
-import { openCart } from '../pages/Cart/Cart';
+import openCart from '../pages/Cart/openCart';
 
 const setFocusStyle = (e) => e.target.parentElement.classList.add('search-form_focus');
 const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-form_focus');
