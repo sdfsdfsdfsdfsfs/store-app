@@ -5,6 +5,7 @@ import QuantityInput from '../ItemDetail/QuantityInput';
 
 const CartItem = (props) => {
   const { img, name, device, collection, quantity, price } = props.item;
+  const { dataIndex, onClick } = props;
 
   return (
     <div className={styles.item}>
@@ -13,7 +14,7 @@ const CartItem = (props) => {
         <div className={styles.info}>
           <div className={styles.name}>
             <span>{name}</span>
-            <IconButton icon="fa-solid fa-xmark" scheme={scss.schemeLight} hover="rotate-90" />
+            <IconButton icon="fa-solid fa-xmark" scheme={scss.schemeLight} hover="rotate-90" onClick={onClick} dataIndex={dataIndex} />
           </div>
           <div>{device}</div>
           <div>{collection}</div>

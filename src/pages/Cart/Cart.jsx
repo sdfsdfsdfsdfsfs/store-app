@@ -1,10 +1,12 @@
 import styles from './Cart.module.scss';
 import scss from '../../assets/_shared.module.scss';
+import { useEffect, useState } from 'react';
 import Overlay from './Overlay';
 import IconButton from '../../components/IconButton';
 import CartItem from './CartItem';
 import Button from '../../components/Button';
 import giornoPattern from '../../assets/images/cases/giorno-pattern.png';
+import whiteClouds from '../../assets/images/cases/white-clouds.png';
 
 const openCart = () => {
   document.querySelector('body').classList.add('hide-scroll');
@@ -23,16 +25,51 @@ const closeCart = () => {
   }, 500);
 }
 
-const item = {
-  collection: "Jojo's Bizarre Adventures",
-  name: 'Giorno Pattern',
-  price: 20,
-  img: giornoPattern,
-  device: 'iPhone 13',
-  quantity: 2,
-}
+const b = [
+  {
+    collection: "Jojo's Bizarre Adventures",
+    name: 'GiorXDDDDDDDDn',
+    price: 100,
+    img: giornoPattern,
+    device: 'iPhone 13',
+    quantity: 2,
+  },
+  {
+    collection: "Naruto",
+    name: 'White Clouds',
+    price: 15,
+    img: whiteClouds,
+    device: 'Redmi Note 9',
+    quantity: 1,
+  },
+  {
+    collection: "Naruto",
+    name: 'White Clouds',
+    price: 15,
+    img: whiteClouds,
+    device: 'Redmi Note 9',
+    quantity: 1,
+  },
+];
 
 const Cart = () => {
+  const [items, setItems] = useState(b);
+
+  const calcSubtotal = () => {
+    return items.reduce((prev, cur) => prev + cur.price, 0);
+  }
+  const [subtotal, setSubtotal] = useState(calcSubtotal);
+
+  const removeItem = (e) => {
+    setItems(items.filter((item, i) => {
+      return i !== +e.target.parentElement.attributes['data-index'].value;
+    }));
+  }
+  
+  useEffect(() => {
+    setSubtotal(calcSubtotal);
+  }, [items]);
+
   return (
     <div>
       <Overlay onClick={closeCart}/>
@@ -43,10 +80,12 @@ const Cart = () => {
           <IconButton scheme={scss.schemeLight} icon="fa-solid fa-angle-right" />
         </div>
         <div className={styles.items}>
-          <CartItem item={item} />
+          {items.map((item, i) => {
+            return <CartItem item={item} key={i} dataIndex={i} onClick={removeItem} />
+          })}
         </div>
         <div className={styles.summary}>
-          <div><span>Subtotal</span><span>$150 USD</span></div>
+          <div><span>Subtotal</span><span>{`$${subtotal} USD`}</span></div>
           <div><span>Shipping</span><span>$40 USD</span></div>
           <div><span>Total</span><span>$190 USD</span></div>
         </div>
