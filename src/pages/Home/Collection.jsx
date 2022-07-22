@@ -4,7 +4,7 @@ const Collection = (props) => {
   const { text, img } = props;
 
   const style = {
-    'background-image': `url(${img})`
+    backgroundImage: `url(${img})`
   }
 
   return (

@@ -4,7 +4,7 @@ import Button from '../../components/Button';
 const Banner = (props) => {
   const { text, btnText, scheme, hover, banner } = props;
 
-  const style = { 'background-image': `url(${banner})` };
+  const style = { backgroundImage: `url(${banner})` };
 
   return(
     <div className="home__banner" style={style}>
