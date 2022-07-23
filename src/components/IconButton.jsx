@@ -11,7 +11,7 @@ const IconButton = (props) => {
 
   return (
     <button className={`${styles.btn} ${styles[`hvr-${hover}`]}`} style={style} onClick={onClick} data-index={dataIndex}>
-      <i className={icon} data-index={dataIndex}></i>
+      <i className={icon}></i>
     </button>
   )
 }

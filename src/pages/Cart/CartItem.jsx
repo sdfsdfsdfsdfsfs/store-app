@@ -1,11 +1,11 @@
 import styles from './CartItem.module.scss';
 import scss from '../../assets/_shared.module.scss';
 import IconButton from '../../components/IconButton';
-import QuantityInput from '../ItemDetail/QuantityInput';
+import QuantityInput from '../../components/QuantityInput';
 
 const CartItem = (props) => {
   const { img, name, device, collection, quantity, price } = props.item;
-  const { dataIndex, removeItem } = props;
+  const { dataIndex, removeItem, changeQuantity } = props;
 
   return (
     <div className={styles.item}>
@@ -20,7 +20,7 @@ const CartItem = (props) => {
           <div>{collection}</div>
         </div>
         <div className={styles.price}>
-          <QuantityInput value={quantity} />
+          <QuantityInput value={quantity} onChange={changeQuantity} dataIndex={dataIndex} />
           <span>{`$${price} USD`}</span>
         </div>
       </div>

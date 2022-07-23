@@ -13,7 +13,16 @@ const Cart = () => {
 
   const removeItem = (e) => {
     setItems(items.filter((item, i) => {
-      return i !== +e.target.attributes['data-index'].value;
+      return i !== +e.currentTarget.attributes['data-index'].value;
+    }));
+  }
+
+  const changeQuantity = (index, quantity) => {
+    setItems(items.map((item, i) => {
+      if (i === index) {
+        item.quantity = quantity;
+      }
+      return item;
     }));
   }
 
@@ -30,7 +39,9 @@ const Cart = () => {
           <h2>My Cart</h2>
           <IconButton scheme={scss.schemeLight} icon="fa-solid fa-angle-right" />
         </div>
-        {items.length > 0 ? <CartContent items={items} summary={summary} removeItem={removeItem} /> : <EmptyCart />}
+        {(items.length > 0) 
+          ? <CartContent items={items} summary={summary} removeItem={removeItem} changeQuantity={changeQuantity} /> 
+          : <EmptyCart />}
       </div>
     </div>
   )

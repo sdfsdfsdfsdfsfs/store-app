@@ -1,5 +1,5 @@
-import styles from './QuantityInput.module.scss';
-import { useState } from 'react';
+import styles from './styles/QuantityInput.module.scss';
+import { useEffect, useState } from 'react';
 
 const QuantityInput = (props) => {
   const [quantity, setQuantity] = useState(props.value ? props.value : 1);
@@ -15,6 +15,12 @@ const QuantityInput = (props) => {
   const setFocusStyle = (e) => e.target.parentElement.classList.add(styles.focus);
   const removeFocusStyle = (e) => e.target.parentElement.classList.remove(styles.focus);
 
+  const { onChange, dataIndex } = props;
+
+  useEffect(() => {
+    if (onChange) onChange(dataIndex, quantity);
+  }, [quantity]); // eslint-disable-line react-hooks/exhaustive-deps
+  
   return (
     <div className={styles.input}>
       <label htmlFor="quantity">Quantity</label>
