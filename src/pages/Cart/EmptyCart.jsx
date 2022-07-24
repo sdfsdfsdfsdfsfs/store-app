@@ -1,6 +1,6 @@
 import styles from './EmptyCart.module.scss';
 import scss from '../../assets/_shared.module.scss';
-import Button from '../../components/Button';
+import Button from '../../components/Button/Button';
 
 const EmptyCart = () => {
   return (

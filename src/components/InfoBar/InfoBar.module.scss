@@ -11,11 +11,11 @@
   }
 }
 
-.info-bar__socials {
+.socials {
   @include flex-row(16px);
 }
 
-.info-bar__info {
+.info {
   @include flex-row(24px);
   font-size: 0.8rem;
 

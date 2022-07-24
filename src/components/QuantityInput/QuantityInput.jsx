@@ -1,4 +1,4 @@
-import styles from './styles/QuantityInput.module.scss';
+import styles from './QuantityInput.module.scss';
 import { useEffect, useState } from 'react';
 
 const QuantityInput = (props) => {

@@ -1,6 +1,6 @@
 import styles from './Cases.module.scss';
 import cases from '../../data/cases';
-import Item from '../../components/Item';
+import Item from '../../components/Item/Item';
 
 const Cases = () => {
   return (

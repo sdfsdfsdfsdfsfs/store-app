@@ -1,8 +1,10 @@
 @import '../../assets/_shared.module.scss';
-.item-link {
+
+.link {
   text-decoration: none;
   color: $clr-neutral-dark;
 }
+
 .item {
   @include flex-col(null, center);
   text-align: center;
@@ -18,18 +20,18 @@
   }
 }
 
-.item__collection {
+.collection {
   font-size: 0.95rem;
   font-weight: 600;
   color: #707070;
   margin-bottom: 6px;
 }
 
-.item__name {
+.name {
   font-weight: 600;
   margin-bottom: 6px;
 }
 
-.item__price {
+.price {
   font-size: 0.9rem;
 }

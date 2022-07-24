@@ -2,7 +2,7 @@ import './AboutUs.scss';
 import scss from '../../assets/_shared.module.scss';
 import assets from './assets';
 import useDocTitle from '../../hooks/useDocTitle';
-import Button from '../../components/Button';
+import Button from '../../components/Button/Button';
 
 const scrollToInfo = () => {
   document.querySelector('.about__info').scrollIntoView({behavior: 'smooth'});

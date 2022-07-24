@@ -1,19 +1,19 @@
-import './styles/InfoBar.scss';
+import styles from './InfoBar.module.scss';
 
 const InfoBar = () => {
   return (
-    <div className="info-bar">
-      <div className="info-bar__socials">
+    <div className={styles['info-bar']}>
+      <div className={styles.socials}>
         <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hvr-grow"><i className="fa-brands fa-instagram"></i></a>
         <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hvr-grow"><i className="fa-brands fa-facebook"></i></a>
         <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="hvr-grow"><i className="fa-brands fa-tiktok"></i></a>
       </div>
-      <div className="info-bar__info">
+      <div className={styles.info}>
         <strong>Free Shipping!</strong>
         <span>VE Orders <strong>$50+</strong></span>
         <span>Outside VE <strong>$100+</strong></span>
       </div>
-      <div className="info-bar__socials hidden">
+      <div className={`${styles.socials} hidden`}>
         <i className="fa-brands fa-instagram"></i>
         <i className="fa-brands fa-facebook"></i>
         <i className="fa-brands fa-tiktok"></i>

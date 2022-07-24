@@ -5,8 +5,8 @@ import cases from '../../data/cases';
 import useDocTitle from '../../hooks/useDocTitle';
 import Banner from './Banner';
 import Collection from './Collection';
-import Button from '../../components/Button';
-import Item from '../../components/Item';
+import Button from '../../components/Button/Button';
+import Item from '../../components/Item/Item';
 
 const Home = () => {
   useDocTitle();

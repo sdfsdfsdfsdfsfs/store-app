@@ -2,8 +2,8 @@ import styles from './Form.module.scss';
 import scss from '../../assets/_shared.module.scss';
 import devices from '../../data/devices';
 import { useState } from 'react';
-import QuantityInput from '../../components/QuantityInput';
-import Button from '../../components/Button';
+import QuantityInput from '../../components/QuantityInput/QuantityInput';
+import Button from '../../components/Button/Button';
 
 const Form = () => {
   const [models, setModels] = useState(devices.apple);

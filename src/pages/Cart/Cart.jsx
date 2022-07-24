@@ -4,7 +4,7 @@ import cartSample from '../../data/cartSample';
 import { useState } from 'react';
 import { closeCart } from './openCart';
 import Overlay from './Overlay';
-import IconButton from '../../components/IconButton';
+import IconButton from '../../components/IconButton/IconButton';
 import CartContent from './CartContent';
 import EmptyCart from './EmptyCart';
 

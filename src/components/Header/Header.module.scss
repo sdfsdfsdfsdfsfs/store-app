@@ -33,7 +33,7 @@ header ul {
   }
 }
 
-.header__icons {
+.icons {
   @include flex-row(18px, center, flex-end);
 }
 
@@ -78,7 +78,7 @@ input[type="search"]::-webkit-search-cancel-button {
     linear-gradient(135deg, transparent 0%, transparent 43%, $clr-input 45%, $clr-input 55%, transparent 57%, transparent 100%);
 }
 
-.header__icons i {
+.icons i {
   color: $clr-primary;
   font-size: 1.2rem;
 

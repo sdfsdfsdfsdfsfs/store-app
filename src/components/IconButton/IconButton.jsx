@@ -1,4 +1,4 @@
-import styles from './styles/IconButton.module.scss';
+import styles from './IconButton.module.scss';
 
 const IconButton = (props) => {
   const { scheme, icon, hover, onClick, dataIndex } = props;

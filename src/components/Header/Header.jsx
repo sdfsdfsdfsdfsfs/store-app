@@ -1,6 +1,6 @@
-import './styles/Header.scss'
-import { Link } from "react-router-dom";
-import openCart from '../pages/Cart/openCart';
+import styles from './Header.module.scss';
+import { Link } from 'react-router-dom';
+import openCart from '../../pages/Cart/openCart';
 
 const setFocusStyle = (e) => e.target.parentElement.classList.add('search-form_focus');
 const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-form_focus');
@@ -8,16 +8,16 @@ const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-
 const Header = () => {
   return (
     <header>
-      <div className="logo"><Link to="/"><div>The Rage Lab</div></Link></div>
+      <div className={styles.logo}><Link to="/"><div>The Rage Lab</div></Link></div>
       <nav>
         <ul>
-          <Link to="/cases"><li className="hvr-underline">Cases</li></Link>
-          <li className="hvr-underline">Collections</li>
-          <li className="hvr-underline">Accesories</li>
-          <Link to="/about-us"><li className="hvr-underline">About Us</li></Link>
+          <Link to="/cases"><li className={styles['hvr-underline']}>Cases</li></Link>
+          <li className={styles['hvr-underline']}>Collections</li>
+          <li className={styles['hvr-underline']}>Accesories</li>
+          <Link to="/about-us"><li className={styles['hvr-underline']}>About Us</li></Link>
         </ul>
       </nav>
-      <div className="header__icons">
+      <div className={styles.icons}>
         <form>
           <label htmlFor="search">Search</label>
           <input type="search" id="search" placeholder="Search..." onFocus={setFocusStyle} onBlur={removeFocusStyle}></input>

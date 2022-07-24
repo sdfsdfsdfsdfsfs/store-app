@@ -1,5 +1,5 @@
 import './Banner.scss';
-import Button from '../../components/Button';
+import Button from '../../components/Button/Button';
 
 const Banner = (props) => {
   const { text, btnText, scheme, hover, banner } = props;

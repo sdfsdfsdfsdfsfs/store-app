@@ -1,7 +1,7 @@
 import styles from './CartContent.module.scss';
 import scss from '../../assets/_shared.module.scss';
 import CartItem from './CartItem';
-import Button from '../../components/Button';
+import Button from '../../components/Button/Button';
 
 const CartContent = (props) => {
   const { items, removeItem, changeQuantity } = props;

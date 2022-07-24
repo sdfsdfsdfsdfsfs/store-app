@@ -1,4 +1,4 @@
-import './styles/Button.scss';
+import styles from './Button.module.scss';
 
 const Button = (props) => {
   const { scheme, hover, onClick, text } = props;
@@ -10,7 +10,7 @@ const Button = (props) => {
   }
 
   return (
-    <button className={`btn hvr-${hover}`} onClick={onClick} style={style}>{text}</button>
+    <button className={`${styles.btn} ${styles[`hvr-${hover}`]}`} onClick={onClick} style={style}>{text}</button>
   )
 }
 
