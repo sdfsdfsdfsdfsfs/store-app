@@ -1,6 +1,6 @@
-import whiteClouds from '../../assets/images/cases/white-clouds.png';
-import giornoPattern from '../../assets/images/cases/giorno-pattern.png';
-import nezukoPattern from '../../assets/images/cases/nezuko-pattern.png';
+import whiteClouds from '../../assets/cases/na-03.png';
+import giornoPattern from '../../assets/cases/jj-01.png';
+import nezukoPattern from '../../assets/cases/ds-01.png';
 
 const assets = {
   whiteClouds,

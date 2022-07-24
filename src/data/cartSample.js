@@ -1,6 +1,6 @@
-import giornoPattern from '../assets/images/cases/giorno-pattern.png';
-import whiteClouds from '../assets/images/cases/white-clouds.png';
-import noFace from '../assets/images/cases/no-face.png';
+import giornoPattern from '../assets/cases/jj-01.png';
+import whiteClouds from '../assets/cases/na-03.png';
+import noFace from '../assets/cases/sg-02.png';
 
 const cartSample = [
   {
