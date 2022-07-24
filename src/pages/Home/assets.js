@@ -1,7 +1,7 @@
-import banner from '../../assets/images/banners/banner.webp';
-import collection1 from '../../assets/images/collections/naruto.jpeg';
-import collection2 from '../../assets/images/collections/demon3.jpg';
-import collection3 from '../../assets/images/collections/aot.webp';
+import banner from '../../assets/banners/banner.webp';
+import collection1 from '../../assets/collections/na.jpeg';
+import collection2 from '../../assets/collections/ds03.jpg';
+import collection3 from '../../assets/collections/at.webp';
 import phoneCase from '../../assets/cases/na-02.png';
 
 const assets = {
