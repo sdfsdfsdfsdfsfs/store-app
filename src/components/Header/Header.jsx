@@ -13,7 +13,7 @@ const Header = () => {
       <div className={styles.logo}><Link to="/">The Rage Lab</Link></div>
       <nav>
         <ul className={styles.nav}>
-          <Link to="/cases"><li className={styles['hvr-underline']}>Cases</li></Link>
+          <Link to="/shop/cases"><li className={styles['hvr-underline']}>Cases</li></Link>
           <li className={styles['hvr-underline']}>Collections</li>
           <li className={styles['hvr-underline']}>Accesories</li>
           <Link to="/about-us"><li className={styles['hvr-underline']}>About Us</li></Link>

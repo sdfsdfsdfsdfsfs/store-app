@@ -1,13 +1,12 @@
-@import '../../assets/_shared.module.scss';
+@import '../../../assets/_shared.module.scss';
 
-.home__banner {
+.banner {
   @include flex-col(24px, flex-start, center);
   height: 80vh;
   width: 100%;
-  padding: 40px 8vw;
+  padding: 0 8vw;
   background-position: center;
   background-size: cover;
-  color: $clr-neutral-light;
 
   h1 {
     font-size: 3rem;

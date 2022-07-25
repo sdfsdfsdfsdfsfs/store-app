@@ -3,8 +3,8 @@ import scss from '../../assets/_shared.module.scss';
 import assets from './assets';
 import cases from '../../data/cases';
 import useDocTitle from '../../hooks/useDocTitle';
-import Banner from './Banner';
-import Collection from './Collection';
+import Banner from './Banner/Banner';
+import CollectionCard from '../../components/CollectionCard/CollectionCard';
 import Button from '../../components/Button/Button';
 import Item from '../../components/Item/Item';
 
@@ -21,9 +21,9 @@ const Home = () => {
           <div><span>View more</span><i className="fa-solid fa-angles-right"></i></div>
         </div>
         <div>
-          <Collection text="Naruto" img={assets.collection1} />
-          <Collection text="Demon Slayer" img={assets.collection2} />
-          <Collection text="Attack on Titan" img={assets.collection3} />
+          <CollectionCard text="Naruto" img={assets.collection1} />
+          <CollectionCard text="Demon Slayer" img={assets.collection2} />
+          <CollectionCard text="Attack on Titan" img={assets.collection3} />
         </div>
       </div>
       <div className="home__about">
