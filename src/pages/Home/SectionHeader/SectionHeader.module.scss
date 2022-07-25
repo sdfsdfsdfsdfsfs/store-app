@@ -1,0 +1,26 @@
+@import '../../../assets/_shared.module.scss';
+
+.header {
+  @include flex-row(null, flex-end);
+  width: 100%;
+  margin-bottom: 42px;
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.view {
+  @include flex-row(10px);
+  color: $clr-primary;
+  text-decoration: none;
+
+  span {
+    font-weight: 700;
+  }
+
+  i {
+    font-size: 0.55rem;
+    line-height: 1.4rem;
+  }
+}

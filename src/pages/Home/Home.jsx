@@ -1,9 +1,10 @@
-import './Home.scss';
+import styles from './Home.module.scss';
 import scss from '../../assets/_shared.module.scss';
 import assets from './assets';
 import cases from '../../data/cases';
 import useDocTitle from '../../hooks/useDocTitle';
 import Banner from './Banner/Banner';
+import SectionHeader from './SectionHeader/SectionHeader';
 import CollectionCard from '../../components/CollectionCard/CollectionCard';
 import Button from '../../components/Button/Button';
 import Item from '../../components/Item/Item';
@@ -12,21 +13,17 @@ const Home = () => {
   useDocTitle();
 
   return (
-    <main className="home">
+    <main className={styles.home}>
       <Banner text="Phone cases built for the bold" btnText="Shop Now" scheme={scss.schemeLight} hover="outline-light" banner={assets.banner} />
-      <div className="home__collections">
-        <div>
-          <div className="hidden"><span>View more</span><i className="fa-solid fa-angles-right"></i></div>
-          <h2>Popular Collections</h2>
-          <div><span>View more</span><i className="fa-solid fa-angles-right"></i></div>
-        </div>
-        <div>
-          <CollectionCard text="Naruto" img={assets.collection1} />
-          <CollectionCard text="Demon Slayer" img={assets.collection2} />
-          <CollectionCard text="Attack on Titan" img={assets.collection3} />
+      <div className={styles.collections}>
+        <SectionHeader text="Popular Collections" link="/collections" />
+        <div className={styles.cards}>
+          <CollectionCard text="Naruto" img={assets.collection1} id="naruto" />
+          <CollectionCard text="Demon Slayer" img={assets.collection2} id="demon-slayer" />
+          <CollectionCard text="Attack on Titan" img={assets.collection3} id="attack-on-titan" />
         </div>
       </div>
-      <div className="home__about">
+      <div className={styles.about}>
         <div>
           <h2>Made to protect</h2>
           <p>Protective. Inspiring. Unlimited style.</p>
@@ -34,9 +31,9 @@ const Home = () => {
         </div>
         <div><img src={assets.phoneCase} alt="phone case"/></div>
       </div>
-      <div className="home__trending">
-        <h2>Trending Now</h2>
-        <div>
+      <div className={styles.trending}>
+        <SectionHeader text="Trending Now" />
+        <div className={styles.cases}>
           <Item case={cases[0]} />
           <Item case={cases[1]} />
           <Item case={cases[2]} />
