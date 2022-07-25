@@ -1,8 +1,8 @@
 import styles from './Banner.module.scss';
-import Button from '../../../components/Button/Button';
+import ButtonLink from '../../../components/ButtonLink/ButtonLink';
 
 const Banner = (props) => {
-  const { text, btnText, scheme, hover, banner } = props;
+  const { text, btnText, scheme, hover, banner, href } = props;
 
   const style = {
     backgroundImage: `url(${banner})`,
@@ -12,7 +12,7 @@ const Banner = (props) => {
   return(
     <div className={styles.banner} style={style}>
       <h1>{text}</h1>
-      <Button text={btnText} scheme={scheme} hover={hover} />
+      <ButtonLink text={btnText} scheme={scheme} hover={hover} href={href} />
     </div>
   )
 }
