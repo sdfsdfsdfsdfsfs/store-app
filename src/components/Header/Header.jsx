@@ -1,30 +1,32 @@
 import styles from './Header.module.scss';
+import scss from '../../assets/_shared.module.scss';
 import { Link } from 'react-router-dom';
 import openCart from '../../pages/Cart/openCart';
+import IconButton from '../IconButton/IconButton';
 
-const setFocusStyle = (e) => e.target.parentElement.classList.add('search-form_focus');
-const removeFocusStyle = (e) => e.target.parentElement.classList.remove('search-form_focus');
+const setFocusStyle = (e) => e.target.parentElement.classList.add(styles.focus);
+const removeFocusStyle = (e) => e.target.parentElement.classList.remove(styles.focus);
 
 const Header = () => {
   return (
-    <header>
-      <div className={styles.logo}><Link to="/"><div>The Rage Lab</div></Link></div>
+    <header className={styles.header}>
+      <div className={styles.logo}><Link to="/">The Rage Lab</Link></div>
       <nav>
-        <ul>
+        <ul className={styles.nav}>
           <Link to="/cases"><li className={styles['hvr-underline']}>Cases</li></Link>
           <li className={styles['hvr-underline']}>Collections</li>
           <li className={styles['hvr-underline']}>Accesories</li>
           <Link to="/about-us"><li className={styles['hvr-underline']}>About Us</li></Link>
         </ul>
       </nav>
-      <div className={styles.icons}>
+      <div className={styles.user}>
         <form>
           <label htmlFor="search">Search</label>
-          <input type="search" id="search" placeholder="Search..." onFocus={setFocusStyle} onBlur={removeFocusStyle}></input>
-          <button type="button"><i className="fa-solid fa-magnifying-glass"></i></button>
+          <input type="search" id="search" placeholder="Search..." onFocus={setFocusStyle} onBlur={removeFocusStyle} />
+          <IconButton scheme={scss.schemePrimaryInv} icon="fa-solid fa-magnifying-glass" hover="glow" />
         </form>
-        <i className="fa-solid fa-user"></i>
-        <i className="fa-solid fa-cart-shopping" onClick={openCart}></i>
+        <IconButton scheme={scss.schemePrimaryInv} icon="fa-solid fa-user" hover="glow" />
+        <IconButton scheme={scss.schemePrimaryInv} icon="fa-solid fa-cart-shopping" hover="glow" onClick={openCart} />
       </div>
     </header>
   )

@@ -21,7 +21,7 @@ import ds03 from '../assets/cases/ds-03.png';
 const cases = [
   {
     id: 'sf-01',
-    name: 'Anya',
+    name: 'Anya Shock',
     price: 20,
     img: sf01,
   },

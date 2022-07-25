@@ -3,7 +3,7 @@
     transition: transform 0.3s;
   }
 
-  &:hover i {
+  &:hover i, &:focus i, &:active i {
     transform: rotate($deg);
   }
 }

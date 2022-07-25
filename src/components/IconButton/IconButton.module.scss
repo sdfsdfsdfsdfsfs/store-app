@@ -8,7 +8,7 @@
     transition: transform 0.3s;
   }
 
-  &:hover i {
+  &:hover i, &:focus i, &:active i {
     transform: rotate($deg);
   }
 }
@@ -19,4 +19,14 @@
 
 .hvr-rotate-90 {
   @include hvr-rotate(90deg);
+}
+
+.hvr-glow {
+  i {
+    transition: opacity 0.3s;
+  }
+  
+  &:hover i, &:focus i, &:active i {
+    opacity: 0.85;
+  }
 }
