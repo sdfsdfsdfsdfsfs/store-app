@@ -2,11 +2,11 @@ import styles from './QuantityInput.module.scss';
 import { useEffect, useState } from 'react';
 
 const QuantityInput = (props) => {
-  const [quantity, setQuantity] = useState(props.value ? props.value : 1);
+  const { value, onChange, dataIndex } = props;
+  const [quantity, setQuantity] = useState(value ? value : 1);
 
   const handleIncrement = () => (quantity < 20) ? setQuantity(quantity + 1) : null;
   const handleDecrement = () => (quantity > 1) ? setQuantity(quantity - 1) : null;
-
   const handleChange = (e) => {
     const value = (isNaN(e.target.value) || e.target.value < 1) ? 1 : +e.target.value;
     (value > 20) ? setQuantity(20) : setQuantity(value);
@@ -14,8 +14,6 @@ const QuantityInput = (props) => {
 
   const setFocusStyle = (e) => e.target.parentElement.classList.add(styles.focus);
   const removeFocusStyle = (e) => e.target.parentElement.classList.remove(styles.focus);
-
-  const { onChange, dataIndex } = props;
 
   useEffect(() => {
     if (onChange) onChange(dataIndex, quantity);

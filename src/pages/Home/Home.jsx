@@ -24,8 +24,8 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.about}>
-        <div>
-          <h2>Made to protect</h2>
+        <div className={styles.info}>
+          <h2>Made to Protect</h2>
           <p>Protective. Inspiring. Unlimited style.</p>
           <Button text="Learn More" scheme={scss.schemePrimaryInv} hover="outline-light" />
         </div>
@@ -35,9 +35,9 @@ const Home = () => {
         <SectionHeader text="Trending Now" />
         <div className={styles.cases}>
           <Item case={cases[0]} />
-          <Item case={cases[1]} />
+          <Item case={cases[6]} />
           <Item case={cases[2]} />
-          <Item case={cases[3]} />
+          <Item case={cases[18]} />
         </div>
       </div>
     </main>
