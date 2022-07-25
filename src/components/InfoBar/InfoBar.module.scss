@@ -5,10 +5,6 @@
   padding: 12px 3vw;
   background: $clr-primary;
   color: $clr-neutral-light;
-
-  a {
-    color: $clr-neutral-light;
-  }
 }
 
 .socials {
@@ -21,14 +17,5 @@
 
   > strong {
     text-transform: uppercase;
-  }
-}
-
-// Icons hover
-.hvr-grow {
-  transition: transform 0.3s;
-
-  &:hover, &:focus, &:active {
-    transform: scale(1.2);
   }
 }

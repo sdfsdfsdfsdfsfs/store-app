@@ -1,9 +1,9 @@
 @import '../../assets/_shared.module.scss';
 
 .footer {
-  @include flex-row(null, null, center);
+  @include flex-row(null, center, center);
   padding: 14px 3vw;
-  background: #f4f4f4;
-  color: #707070;
+  background: $clr-primary;
+  color: $clr-neutral-light;
   font-size: 0.8rem;
 }

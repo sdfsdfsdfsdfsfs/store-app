@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      Copyright © {new Date().getFullYear()} The Rage Lab
+      <span>Copyright © {new Date().getFullYear()} <strong>The Rage Lab</strong></span>
     </footer>
   )
 }

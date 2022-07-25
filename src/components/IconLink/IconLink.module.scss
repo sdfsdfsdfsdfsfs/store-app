@@ -1,0 +1,27 @@
+@mixin hvr-rotate($deg) {
+  i {
+    transition: transform 0.3s;
+  }
+
+  &:hover i {
+    transform: rotate($deg);
+  }
+}
+
+.hvr-rotate-45 {
+  @include hvr-rotate(45deg);
+}
+
+.hvr-rotate-90 {
+  @include hvr-rotate(90deg);
+}
+
+.hvr-grow {
+  i {
+    transition: transform 0.3s;
+  }
+
+  &:hover i, &:focus i, &:active i {
+    transform: scale(1.2);
+  }
+}
