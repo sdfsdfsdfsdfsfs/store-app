@@ -4,7 +4,7 @@ import assets from './assets';
 import cases from '../../data/cases';
 import useDocTitle from '../../hooks/useDocTitle';
 import Banner from './Banner/Banner';
-import SectionHeader from './SectionHeader/SectionHeader';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import CollectionCard from '../../components/CollectionCard/CollectionCard';
 import ButtonLink from '../../components/ButtonLink/ButtonLink';
 import Item from '../../components/Item/Item';
@@ -16,7 +16,7 @@ const Home = () => {
     <main className={styles.home}>
       <Banner text="Phone cases built for the bold" btnText="Shop Now" scheme={scss.schemeLight} hover="outline-light" banner={assets.banner} href="/shop/cases" />
       <div className={styles.collections}>
-        <SectionHeader text="Popular Collections" link="/collections" />
+        <SectionHeader text="Popular Collections" href="/collections" />
         <div className={styles.cards}>
           <CollectionCard text="Naruto" img={assets.collection1} id="naruto" />
           <CollectionCard text="Demon Slayer" img={assets.collection2} id="demon-slayer" />

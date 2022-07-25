@@ -75,7 +75,7 @@ const cases = [
   },
   {
     id: 'op-01',
-    name: 'Luffy',
+    name: 'Thousand Sunny',
     price: 20,
     img: op01,
   },
@@ -105,7 +105,7 @@ const cases = [
   },
   {
     id: 'at-01',
-    name: 'Wall Titan',
+    name: 'Fly High',
     price: 20,
     img: at01,
   },

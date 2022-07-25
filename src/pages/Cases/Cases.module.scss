@@ -1,18 +1,14 @@
 @import '../../assets/shared.module';
 
 .header {
-  @include flex-row(null, null, center);
-  padding: 40px 3vw 0 3vw;
-  
-  h1 {
-    font-size: 2rem;
-  }
+  margin-top: 52px;
+  padding: 0 3vw;
 }
 
 .cases {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 20px 3vw;
-  row-gap: 20px;
-  margin-bottom: 40px;
+  padding: 0 3vw;
+  row-gap: 42px;
+  margin-bottom: 52px;
 }
