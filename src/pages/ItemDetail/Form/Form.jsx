@@ -1,9 +1,9 @@
 import styles from './Form.module.scss';
-import scss from '../../assets/_shared.module.scss';
-import devices from '../../data/devices';
+import scss from '../../../assets/_shared.module.scss';
+import devices from '../../../data/devices';
 import { useState } from 'react';
-import QuantityInput from '../../components/QuantityInput/QuantityInput';
-import Button from '../../components/Button/Button';
+import QuantityInput from '../../../components/QuantityInput/QuantityInput';
+import Button from '../../../components/Button/Button';
 
 const Form = () => {
   const [models, setModels] = useState(devices.apple);
@@ -22,7 +22,7 @@ const Form = () => {
         <label htmlFor="model">Model</label>
         <select id="model">
           {models.map((model, i) => {
-          return <option value={model.toLowerCase()} key={i}>{model}</option>
+            return <option value={model.toLowerCase()} key={i}>{model}</option>
           })}
         </select>
       </div>

@@ -24,6 +24,11 @@
 
     i {
       color: $clr-primary;
+      transition: opacity 0.3s;
+    }
+
+    &:hover i, &:focus i, &:active i {
+      opacity: 0.85;
     }
   }
 
