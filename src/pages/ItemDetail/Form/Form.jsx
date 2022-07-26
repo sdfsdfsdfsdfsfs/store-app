@@ -27,7 +27,7 @@ const Form = () => {
         </select>
       </div>
       <QuantityInput />
-      <Button text="Add to cart" scheme={scss.schemePrimary} hover="glow" />
+      <Button text="Add to Cart" scheme={scss.schemePrimary} hover="glow" />
     </form>
   )
 }

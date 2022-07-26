@@ -1,11 +1,11 @@
-import whiteClouds from '../../assets/cases/na-03.png';
-import giornoPattern from '../../assets/cases/jj-01.png';
-import nezukoPattern from '../../assets/cases/ds-01.png';
+import case1 from '../../assets/cases/sf-01.png';
+import case2 from '../../assets/cases/jk-02.png';
+import case3 from '../../assets/cases/ds-03.png';
 
 const assets = {
-  whiteClouds,
-  giornoPattern,
-  nezukoPattern
+  case1,
+  case2,
+  case3,
 }
 
 export default assets;
