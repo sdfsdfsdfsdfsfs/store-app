@@ -34,10 +34,10 @@ const Home = () => {
       <div className={styles.trending}>
         <SectionHeader text="Trending Now" />
         <div className={styles.cases}>
+          <Item case={cases[16]} />
           <Item case={cases[0]} />
-          <Item case={cases[6]} />
           <Item case={cases[2]} />
-          <Item case={cases[18]} />
+          <Item case={cases[6]} />
         </div>
       </div>
     </main>

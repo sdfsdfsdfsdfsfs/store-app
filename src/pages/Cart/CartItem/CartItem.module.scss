@@ -1,4 +1,4 @@
-@import '../../assets/shared.module';
+@import '../../../assets/shared.module';
 
 .item {
   @include flex-row(16px, center);
@@ -10,6 +10,7 @@
   > div {
     @include flex-col(12px);
     width: 100%;
+    padding-bottom: 8px;
   }
 }
 

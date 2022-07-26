@@ -3,10 +3,10 @@ import scss from '../../assets/_shared.module.scss';
 import cartSample from '../../data/cartSample';
 import { useState } from 'react';
 import { closeCart } from './openCart';
-import Overlay from './Overlay';
+import Overlay from './Overlay/Overlay';
 import IconButton from '../../components/IconButton/IconButton';
-import CartContent from './CartContent';
-import EmptyCart from './EmptyCart';
+import CartContent from './CartContent/CartContent';
+import EmptyCart from './EmptyCart/EmptyCart';
 
 const Cart = () => {
   const [items, setItems] = useState(cartSample);

@@ -1,7 +1,7 @@
 import styles from './CartItem.module.scss';
-import scss from '../../assets/_shared.module.scss';
-import IconButton from '../../components/IconButton/IconButton';
-import QuantityInput from '../../components/QuantityInput/QuantityInput';
+import scss from '../../../assets/_shared.module.scss';
+import IconButton from '../../../components/IconButton/IconButton';
+import QuantityInput from '../../../components/QuantityInput/QuantityInput';
 
 const CartItem = (props) => {
   const { img, name, device, collection, quantity, price } = props.item;

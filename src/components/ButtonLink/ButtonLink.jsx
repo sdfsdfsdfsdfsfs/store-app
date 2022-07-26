@@ -2,7 +2,7 @@ import styles from './ButtonLink.module.scss';
 import { Link } from 'react-router-dom';
 
 const Button = (props) => {
-  const { scheme, hover, href, text } = props;
+  const { scheme, hover, href, text, onClick } = props;
   const [color, background] = scheme.split(', ');
 
   const style = {
@@ -11,7 +11,9 @@ const Button = (props) => {
   }
 
   return (
-    <Link to={href} className={`${styles.btn} ${styles[`hvr-${hover}`]}`} style={style}>{text}</Link>
+    <Link className={styles.link} to={href}>
+      <div className={`${styles.btn} ${styles[`hvr-${hover}`]}`} style={style} onClick={onClick}>{text}</div>
+    </Link>
   )
 }
 

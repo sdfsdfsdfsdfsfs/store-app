@@ -1,8 +1,9 @@
-@import '../../assets/shared.module';
+@import '../../../assets/shared.module';
 
 .empty {
   margin-top: 25vh;
 }
+
 .message {
   padding: 20px 2vw;
   font-weight: 600;
@@ -12,8 +13,4 @@
 
 .btn {
   padding: 20px 2vw;
-
-  button {
-    width: 100%;
-  }
 }

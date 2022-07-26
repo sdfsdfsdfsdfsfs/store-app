@@ -1,5 +1,9 @@
 @import '../../assets/_shared.module.scss';
 
+.link {
+  text-decoration: none;
+}
+
 .btn {
   border: none;
   border-radius: 4px;
@@ -7,6 +11,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
+  text-align: center;
 }
 
 @mixin hvr-outline($color) {

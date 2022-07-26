@@ -1,13 +1,7 @@
-@import '../../assets/shared.module';
-/*
-.content {
-  > div {
-    width: 463px;
-  }
-}*/
+@import '../../../assets/shared.module';
 
 .items {
-  @include flex-col(40px);
+  @include flex-col(32px);
   padding: 20px 2vw;
 }
 
@@ -23,8 +17,4 @@
 
 .btn {
   padding: 20px 2vw;
-
-  button {
-    width: 100%;
-  }
 }
