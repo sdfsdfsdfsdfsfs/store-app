@@ -38,7 +38,7 @@ const AboutUs = () => {
         <p>We always put our customers first, with a rapidly expanding customer happiness team, there's always somebody on hand to answer your query.</p>
       </div>
       <div className={styles.shop}>
-        <img src={assets.case1} alt="logo"></img>
+        <img src={assets.logo} alt="logo"></img>
         <ButtonLink text="Shop Now" href="/shop/cases" scheme={scss.schemePrimary} hover="glow" />
       </div>
     </main>

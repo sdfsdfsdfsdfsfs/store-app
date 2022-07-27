@@ -79,10 +79,10 @@
 }
 
 .shop {
-  @include flex-col(32px, center);
+  @include flex-col(52px, center);
   margin-bottom: 52px;
 
   img {
-    width: 70px;
+    width: 80px;
   }
 }

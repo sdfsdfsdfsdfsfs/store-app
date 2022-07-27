@@ -1,5 +1,6 @@
 import styles from './Header.module.scss';
 import scss from '../../assets/_shared.module.scss';
+import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import openCart from '../../pages/Cart/openCart';
 import IconButton from '../IconButton/IconButton';
@@ -10,7 +11,7 @@ const removeFocusStyle = (e) => e.target.parentElement.classList.remove(styles.f
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}><Link to="/">The Rage Lab</Link></div>
+      <div className={styles.logo}><Link to="/"><img src={logo} alt="logo" /></Link><Link to="/">The Rage Lab</Link></div>
       <nav>
         <ul className={styles.nav}>
           <Link to="/shop/cases"><li className={styles['hvr-underline']}>Cases</li></Link>
