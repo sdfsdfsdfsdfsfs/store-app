@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import InfoBar from './components/InfoBar/InfoBar';
 import Header from './components/Header/Header';
@@ -10,6 +11,8 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import Footer from './components/Footer/Footer';
 
 function App() {
+  const [cart, setCart] = useState([]);
+
   return (
     <BrowserRouter>
       <ScrollToTop />
@@ -19,10 +22,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop/cases" element={<Cases />} />
-          <Route path="/shop/cases/:id" element={<ItemDetail />} />
+          <Route path="/shop/cases/:id" element={<ItemDetail cart={cart} setCart={setCart} />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
-        <Cart />
+        <Cart cart={cart} setCart={setCart} />
         <Footer />
       </div>
     </BrowserRouter>

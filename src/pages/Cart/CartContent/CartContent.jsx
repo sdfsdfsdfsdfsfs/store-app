@@ -5,13 +5,13 @@ import CartItem from '../CartItem/CartItem';
 import ButtonLink from '../../../components/ButtonLink/ButtonLink';
 
 const CartContent = (props) => {
-  const { items, removeItem, changeQuantity } = props;
+  const { cart, removeItem, changeQuantity } = props;
   const { subtotal, shipping, total } = props.summary;
 
   return (
     <div className={styles.content}>
       <div className={styles.items}>
-        {items.map((item, i) => {
+        {cart.map((item, i) => {
           return <CartItem item={item} key={item.name} dataIndex={i} removeItem={removeItem} changeQuantity={changeQuantity} />
         })}
       </div>

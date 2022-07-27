@@ -5,11 +5,16 @@ import useDocTitle from '../../hooks/useDocTitle';
 import { useParams } from 'react-router-dom';
 import Form from './Form/Form';
 
-const ItemDetail = () => {
+const ItemDetail = (props) => {
   const { id } = useParams();
   const collection = collections[id.split('-')[0]];
   const item = cases.find((i) => i.id === id);
   const { img, name, price } = item;
+
+  const { cart, setCart } = props;
+  const addItem = (item) => {
+    setCart([...cart, item]);
+  }
 
   useDocTitle(`${name} Case`);
 
@@ -22,7 +27,7 @@ const ItemDetail = () => {
           <h1 className={styles.name}>{name}</h1>
           <div className={styles.price}>{`$${price} USD`}</div>
         </div>
-        <Form />
+        <Form item={item} collection={collection} addItem={addItem} />
       </div>
     </main>
   )

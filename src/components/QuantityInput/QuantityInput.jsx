@@ -16,7 +16,7 @@ const QuantityInput = (props) => {
   const removeFocusStyle = (e) => e.target.parentElement.classList.remove(styles.focus);
 
   useEffect(() => {
-    if (onChange) onChange(dataIndex, quantity);
+    if (onChange) onChange(quantity, dataIndex);
   }, [quantity]); // eslint-disable-line react-hooks/exhaustive-deps
   
   return (
