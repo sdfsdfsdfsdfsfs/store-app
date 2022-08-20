@@ -3,7 +3,8 @@ import collections from '../../data/collections';
 import { Link } from 'react-router-dom';
 
 const Item = (props) => {
-  const { id, img, name, price } = props.case;
+  const { id } = props;
+  const { img, name, price } = props.case;
   const collection = collections[id.split('-')[0]].name;
 
   return (

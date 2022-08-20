@@ -5,25 +5,35 @@ import { useState } from 'react';
 import openCart from '../../Cart/openCart';
 import QuantityInput from '../../../components/QuantityInput/QuantityInput';
 import Button from '../../../components/Button/Button';
+import { useEffect } from 'react';
 
 const Form = (props) => {
-  const { item, addItem } = props;
+  const { item, id, addItem } = props;
 
   const [devices, setDevices] = useState(phoneDevices.apple);
   const changeDevices = (e) => {
     setDevices(phoneDevices[e.target.value]);
   }
 
+  useEffect(() => {
+    changeDevice();
+  }, [devices]);
+
   const [order, setOrder] = useState({ device: 'iPhone 13', quantity: 1 });
-  const changeOrder = (e) => setOrder({...order, [e.target.id]: e.target.value});
+
+  const changeDevice = () => {
+    const value = document.querySelector('#device').value;
+    setOrder({ ...order, device: value });
+  }
+
   const changeQuantity = (quantity) => {
-    setOrder({...order, quantity: quantity})
+    setOrder({ ...order, quantity });
   }
 
   const handleAddItem = (e) => {
     e.preventDefault();
     const newItem = {
-      id: item.id,
+      id: id,
       price: item.price,
       device: order.device,
       quantity: order.quantity,
@@ -44,7 +54,7 @@ const Form = (props) => {
       </div>
       <div className={styles.input}>
         <label htmlFor="device">Device</label>
-        <select id="device" onChange={changeOrder}>
+        <select id="device" onChange={changeDevice}>
           {devices.map((device, i) => {
             return <option value={device} key={i}>{device}</option>
           })}

@@ -10,7 +10,7 @@ const CartItem = (props) => {
 
   const { id, price, device, quantity, } = props.item;
   const collection = collections[id.split('-')[0]].name;
-  const item = cases.find((i) => i.id === id);
+  const item = cases[id];
   const { img, name } = item;
 
   return (

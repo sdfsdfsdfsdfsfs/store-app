@@ -12,9 +12,7 @@ const Collections = () => {
       <div className={styles.header}><SectionHeader text="Collections" /></div>
       <div className={styles.collections}>
         {Object.entries(collections).map(([key, value]) => {
-          return (
-            <CollectionCard collection={value} id={key}/>
-          )
+          return <CollectionCard collection={value} id={key} key={key} />
         })}
       </div>
     </main>

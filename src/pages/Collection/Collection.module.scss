@@ -1,0 +1,14 @@
+@import '../../assets/shared.module';
+
+.header {
+  margin-top: 52px;
+  padding: 0 3vw;
+}
+
+.cases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 3vw;
+  row-gap: 42px;
+  margin-bottom: 52px;
+}

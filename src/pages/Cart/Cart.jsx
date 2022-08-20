@@ -11,7 +11,7 @@ const Cart = (props) => {
 
   const removeItem = (e) => {
     setCart(cart.filter((item, i) => {
-      return i !== +e.currentTarget.attributes['data-index'].value;
+      return i !== +e.currentTarget.getAttribute('data-index');
     }));
   }
 

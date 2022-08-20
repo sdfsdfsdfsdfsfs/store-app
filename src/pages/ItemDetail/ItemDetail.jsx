@@ -8,7 +8,7 @@ import Form from './Form/Form';
 const ItemDetail = (props) => {
   const { id } = useParams();
   const collection = collections[id.split('-')[0]].name;
-  const item = cases.find((i) => i.id === id);
+  const item = cases[id];
   const { img, name, price } = item;
 
   const { cart, setCart } = props;
@@ -27,7 +27,7 @@ const ItemDetail = (props) => {
           <h1 className={styles.name}>{name}</h1>
           <div className={styles.price}>{`$${price} USD`}</div>
         </div>
-        <Form item={item} collection={collection} addItem={addItem} />
+        <Form item={item} id={id} addItem={addItem} />
       </div>
     </main>
   )

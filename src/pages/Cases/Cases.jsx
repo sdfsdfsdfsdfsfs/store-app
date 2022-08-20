@@ -13,8 +13,8 @@ const Cases = () => {
         <SectionHeader text="All Cases" />
       </div>
       <div className={styles.cases}>
-        {cases.map((item) => {
-          return <Item case={item} key={item.id} />
+        {Object.entries(cases).map(([key, value]) => {
+          return <Item case={value} id={key} key={key} />
         })}
       </div>
     </main>
