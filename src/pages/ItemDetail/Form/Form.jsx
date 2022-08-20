@@ -17,7 +17,7 @@ const Form = (props) => {
 
   useEffect(() => {
     changeDevice();
-  }, [devices]);
+  }, [devices]); // eslint-disable-line
 
   const [order, setOrder] = useState({ device: 'iPhone 13', quantity: 1 });
 

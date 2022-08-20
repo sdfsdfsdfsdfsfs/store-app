@@ -17,7 +17,7 @@ function App() {
   const [cart, setCart] = useState([]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/store-app">
       <ScrollToTop />
       <div className="App">
         <InfoBar />
