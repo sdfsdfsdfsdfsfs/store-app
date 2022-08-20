@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Item = (props) => {
   const { id, img, name, price } = props.case;
-  const collection = collections[id.split('-')[0]];
+  const collection = collections[id.split('-')[0]].name;
 
   return (
     <Link to={`/shop/cases/${id}`} className={styles.link}>

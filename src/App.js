@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import Cases from './pages/Cases/Cases';
 import ItemDetail from './pages/ItemDetail/ItemDetail';
 import Cart from './pages/Cart/Cart';
+import Collections from './pages/Collections/Collections';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Footer from './components/Footer/Footer';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/shop/cases" element={<Cases />} />
           <Route path="/shop/cases/:id" element={<ItemDetail cart={cart} setCart={setCart} />} />
+          <Route path="/shop/collections" element={<Collections />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
         <Cart cart={cart} setCart={setCart} />

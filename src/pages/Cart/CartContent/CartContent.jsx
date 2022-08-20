@@ -12,7 +12,7 @@ const CartContent = (props) => {
     <div className={styles.content}>
       <div className={styles.items}>
         {cart.map((item, i) => {
-          return <CartItem item={item} key={item.name} dataIndex={i} removeItem={removeItem} changeQuantity={changeQuantity} />
+          return <CartItem item={item} key={item.id} dataIndex={i} removeItem={removeItem} changeQuantity={changeQuantity} />
         })}
       </div>
       <div className={styles.summary}>

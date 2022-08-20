@@ -1,137 +1,137 @@
-import sf01 from '../assets/cases/sf-01.png';
-import ds01 from '../assets/cases/ds-01.png';
-import sg01 from '../assets/cases/sg-01.png';
-import jj01 from '../assets/cases/jj-01.png';
-import jk01 from '../assets/cases/jk-01.png';
-import jj02 from '../assets/cases/jj-02.png';
-import jk02 from '../assets/cases/jk-02.png';
-import na01 from '../assets/cases/na-01.png';
-import sl01 from '../assets/cases/sl-01.png';
-import op01 from '../assets/cases/op-01.png';
-import ds02 from '../assets/cases/ds-02.png';
-import sg02 from '../assets/cases/sg-02.png';
-import na02 from '../assets/cases/na-02.png';
-import sl02 from '../assets/cases/sl-02.png';
-import at01 from '../assets/cases/at-01.png';
-import na03 from '../assets/cases/na-03.png';
-import at02 from '../assets/cases/at-02.png';
-import sl03 from '../assets/cases/sl-03.png';
-import ds03 from '../assets/cases/ds-03.png';
+import sxf01 from '../assets/cases/sxf-01.png';
+import dsl01 from '../assets/cases/dsl-01.png';
+import sgh01 from '../assets/cases/sgh-01.png';
+import jba01 from '../assets/cases/jba-01.png';
+import jjk01 from '../assets/cases/jjk-01.png';
+import jba02 from '../assets/cases/jba-02.png';
+import jjk02 from '../assets/cases/jjk-02.png';
+import nar01 from '../assets/cases/nar-01.png';
+import sel01 from '../assets/cases/sel-01.png';
+import opi01 from '../assets/cases/opi-01.png';
+import dsl02 from '../assets/cases/dsl-02.png';
+import sgh02 from '../assets/cases/sgh-02.png';
+import nar02 from '../assets/cases/nar-02.png';
+import sel02 from '../assets/cases/sel-02.png';
+import aot01 from '../assets/cases/aot-01.png';
+import nar03 from '../assets/cases/nar-03.png';
+import aot02 from '../assets/cases/aot-02.png';
+import sel03 from '../assets/cases/sel-03.png';
+import dsl03 from '../assets/cases/dsl-03.png';
 
 const cases = [
   {
-    id: 'sf-01',
+    id: 'sxf-01',
     name: 'Anya Shock',
     price: 20,
-    img: sf01,
+    img: sxf01,
   },
   {
-    id: 'ds-01',
+    id: 'dsl-01',
     name: 'Demon Sister',
     price: 20,
-    img: ds01,
+    img: dsl01,
   },
   {
-    id: 'sg-01',
+    id: 'sgh-01',
     name: 'Dragon Spirit',
     price: 20,
-    img: sg01,
+    img: sgh01,
   },
   {
-    id: 'jj-01',
+    id: 'jba-01',
     name: 'Giorno Pattern',
     price: 20,
-    img: jj01,
+    img: jba01,
   },
   {
-    id: 'jk-01',
+    id: 'jjk-01',
     name: 'Gojo',
     price: 20,
-    img: jk01,
+    img: jjk01,
   },
   {
-    id: 'jj-02',
+    id: 'jba-02',
     name: 'Jotaro Kujo',
     price: 20,
-    img: jj02,
+    img: jba02,
   },
   {
-    id: 'jk-02',
+    id: 'jjk-02',
     name: 'Jujutsu High Students',
     price: 20,
-    img: jk02,
+    img: jjk02,
   },
   {
-    id: 'na-01',
+    id: 'nar-01',
     name: 'Young Naruto',
     price: 20,
-    img: na01,
+    img: nar01,
   },
   {
-    id: 'sl-01',
+    id: 'sel-01',
     name: 'Lost in The Wired',
     price: 20,
-    img: sl01,
+    img: sel01,
   },
   {
-    id: 'op-01',
+    id: 'opi-01',
     name: 'Thousand Sunny',
     price: 20,
-    img: op01,
+    img: opi01,
   },
   {
-    id: 'ds-02',
+    id: 'dsl-02',
     name: 'Nezuko Pattern',
     price: 20,
-    img: ds02,
+    img: dsl02,
   },
   {
-    id: 'sg-02',
+    id: 'sgh-02',
     name: 'No Face',
     price: 20,
-    img: sg02,
+    img: sgh02,
   },
   {
-    id: 'na-02',
+    id: 'nar-02',
     name: 'Visual Jutsu',
     price: 20,
-    img: na02,
+    img: nar02,
   },
   {
-    id: 'sl-02',
+    id: 'sel-02',
     name: 'Retro Wired',
     price: 20,
-    img: sl02,
+    img: sel02,
   },
   {
-    id: 'at-01',
+    id: 'aot-01',
     name: 'Fly High',
     price: 20,
-    img: at01,
+    img: aot01,
   },
   {
-    id: 'na-03',
+    id: 'nar-03',
     name: 'White Clouds',
     price: 20,
-    img: na03,
+    img: nar03,
   },
   {
-    id: 'at-02',
+    id: 'aot-02',
     name: 'Wings of Freedom',
     price: 20,
-    img: at02,
+    img: aot02,
   },
   {
-    id: 'sl-03',
+    id: 'sel-03',
     name: 'Wired Girl',
     price: 20,
-    img: sl03,
+    img: sel03,
   },
   {
-    id: 'ds-03',
+    id: 'dsl-03',
     name: 'Yellow Boy',
     price: 20,
-    img: ds03,
+    img: dsl03,
   },
 ]
 

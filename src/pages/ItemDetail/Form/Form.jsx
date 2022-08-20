@@ -7,7 +7,7 @@ import QuantityInput from '../../../components/QuantityInput/QuantityInput';
 import Button from '../../../components/Button/Button';
 
 const Form = (props) => {
-  const { item, collection, addItem } = props;
+  const { item, addItem } = props;
 
   const [devices, setDevices] = useState(phoneDevices.apple);
   const changeDevices = (e) => {
@@ -23,10 +23,8 @@ const Form = (props) => {
   const handleAddItem = (e) => {
     e.preventDefault();
     const newItem = {
-      collection,
-      name: item.name,
+      id: item.id,
       price: item.price,
-      img: item.img,
       device: order.device,
       quantity: order.quantity,
     }

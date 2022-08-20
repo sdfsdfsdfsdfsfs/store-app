@@ -8,6 +8,7 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import CollectionCard from '../../components/CollectionCard/CollectionCard';
 import ButtonLink from '../../components/ButtonLink/ButtonLink';
 import Item from '../../components/Item/Item';
+import collections from '../../data/collections';
 
 const Home = () => {
   useDocTitle();
@@ -18,9 +19,9 @@ const Home = () => {
       <div className={styles.collections}>
         <SectionHeader text="Popular Collections" href="/collections" />
         <div className={styles.cards}>
-          <CollectionCard text="Naruto" img={assets.collection1} id="naruto" />
-          <CollectionCard text="Demon Slayer" img={assets.collection2} id="demon-slayer" />
-          <CollectionCard text="Attack on Titan" img={assets.collection3} id="attack-on-titan" />
+          <CollectionCard collection={collections.nar} />
+          <CollectionCard collection={collections.dsl} />
+          <CollectionCard collection={collections.aot} />
         </div>
       </div>
       <div className={styles.about}>
