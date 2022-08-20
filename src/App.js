@@ -10,6 +10,7 @@ import Collections from './pages/Collections/Collections';
 import Collection from './pages/Collection/Collection';
 import Cart from './pages/Cart/Cart';
 import AboutUs from './pages/AboutUs/AboutUs';
+import ThankYou from './pages/ThankYou/ThankYou';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
           <Route path="/shop/collections" element={<Collections />} />
           <Route path="/shop/collections/:slug" element={<Collection />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/shop/accesories" element={<ThankYou />} />
+          <Route path="/checkout" element={<ThankYou />} />
         </Routes>
         <Cart cart={cart} setCart={setCart} />
         <Footer />

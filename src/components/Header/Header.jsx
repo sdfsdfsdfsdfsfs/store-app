@@ -16,7 +16,7 @@ const Header = () => {
         <ul className={styles.nav}>
           <Link to="/shop/cases"><li className={styles['hvr-underline']}>Cases</li></Link>
           <Link to="/shop/collections"><li className={styles['hvr-underline']}>Collections</li></Link>
-          <li className={styles['hvr-underline']}>Accesories</li>
+          <Link to="/shop/accesories"><li className={styles['hvr-underline']}>Accesories</li></Link>
           <Link to="/about-us"><li className={styles['hvr-underline']}>About Us</li></Link>
         </ul>
       </nav>
