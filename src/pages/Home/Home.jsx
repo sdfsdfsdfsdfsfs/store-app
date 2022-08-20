@@ -17,7 +17,7 @@ const Home = () => {
     <main className={styles.home}>
       <Banner text="Phone cases built for the bold" btnText="Shop Now" scheme={scss.schemeLight} hover="outline-light" banner={assets.banner} href="/shop/cases" />
       <div className={styles.collections}>
-        <SectionHeader text="Popular Collections" href="/collections" />
+        <SectionHeader text="Popular Collections" href="/shop/collections" />
         <div className={styles.cards}>
           <CollectionCard collection={collections.nar} />
           <CollectionCard collection={collections.dsl} />

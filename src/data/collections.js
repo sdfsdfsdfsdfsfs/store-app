@@ -12,38 +12,47 @@ const collections = {
   aot: { 
     name: 'Attack on Titan', 
     img: aot,
+    slug: 'attack-on-titan',
   },
   dsl: { 
     name: 'Demon Slayer', 
     img: dsl,
+    slug: 'demon-slayer',
   },
   jba: { 
     name: "Jojo's Bizarre Adventures", 
     img: jba,
+    slug: 'jojos',
   },
   jjk: { 
     name: 'Jujutsu Kaisen', 
     img: jjk,
+    slug: 'jujutsu-kaisen',
   },
   nar: { 
     name: 'Naruto', 
     img: nar,
+    slug: 'naruto',
   },
   opi: { 
     name: 'One Piece', 
     img: opi,
+    slug: 'one-piece',
   },
   sxf: { 
     name: 'Spy x Family', 
     img: sxf,
+    slug: 'spy-family',
   },
   sgh: { 
     name: 'Studio Ghibli', 
     img: sgh,
+    slug: 'studio-ghibli',
   },
   sel: { 
     name: 'Serial Experiments Lain', 
     img: sel,
+    slug: 'lain',
   },
 }
 

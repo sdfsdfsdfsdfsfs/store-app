@@ -7,7 +7,7 @@ import Form from './Form/Form';
 
 const ItemDetail = (props) => {
   const { id } = useParams();
-  const collection = collections[id.split('-')[0]];
+  const collection = collections[id.split('-')[0]].name;
   const item = cases.find((i) => i.id === id);
   const { img, name, price } = item;
 
