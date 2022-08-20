@@ -3,16 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Button = (props) => {
   const { scheme, hover, href, text, onClick } = props;
-  const [color, background] = scheme.split(', ');
-
-  const style = {
-    color,
-    background
-  }
 
   return (
     <Link className={styles.link} to={href}>
-      <div className={`${styles.btn} ${styles[`hvr-${hover}`]}`} style={style} onClick={onClick}>{text}</div>
+      <div className={`${styles.btn} ${scheme} ${styles[`hvr-${hover}`]}`} onClick={onClick}>{text}</div>
     </Link>
   )
 }

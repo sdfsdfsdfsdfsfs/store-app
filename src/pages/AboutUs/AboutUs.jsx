@@ -1,5 +1,4 @@
 import styles from './AboutUs.module.scss';
-import scss from '../../assets/_shared.module.scss';
 import assets from './assets';
 import useDocTitle from '../../hooks/useDocTitle';
 import Button from '../../components/Button/Button';
@@ -20,7 +19,7 @@ const AboutUs = () => {
           <strong>Love your rage, not your cage.</strong>
           <p>We are a Venezuela-based tech accessories company built for the bold. As big believers in self-expression, we wanted to embody just that for the playmakers who settle for nothing less than the best for their phone cases.</p>
         </div>
-        <Button text="Meet The Rage Lab" scheme={scss.schemePrimaryInv} hover="outline-light" onClick={scrollToInfo} />
+        <Button text="Meet The Rage Lab" scheme="scheme-primary_inv" hover="outline-light" onClick={scrollToInfo} />
       </div>
       <div className={styles.info}>
         <h2>Designed in Maracaibo</h2>
@@ -39,7 +38,7 @@ const AboutUs = () => {
       </div>
       <div className={styles.shop}>
         <img src={assets.logo} alt="logo"></img>
-        <ButtonLink text="Shop Now" href="/shop/cases" scheme={scss.schemePrimary} hover="glow" />
+        <ButtonLink text="Shop Now" href="/shop/cases" scheme="scheme-primary" hover="glow" />
       </div>
     </main>
   )

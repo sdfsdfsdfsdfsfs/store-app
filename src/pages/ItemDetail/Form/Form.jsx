@@ -1,5 +1,4 @@
 import styles from './Form.module.scss';
-import scss from '../../../assets/_shared.module.scss';
 import phoneDevices from '../../../data/devices';
 import { useState } from 'react';
 import openCart from '../../Cart/openCart';
@@ -61,7 +60,7 @@ const Form = (props) => {
         </select>
       </div>
       <QuantityInput onChange={changeQuantity} />
-      <Button text="Add to Cart" scheme={scss.schemePrimary} hover="glow" />
+      <Button text="Add to Cart" scheme="scheme-primary" hover="glow" />
     </form>
   )
 }

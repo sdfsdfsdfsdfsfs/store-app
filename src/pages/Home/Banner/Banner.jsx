@@ -6,7 +6,6 @@ const Banner = (props) => {
 
   const style = {
     backgroundImage: `url(${banner})`,
-    color: scheme.split(', ')[1],
   };
 
   return(

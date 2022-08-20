@@ -1,4 +1,4 @@
-@import '../../../assets/shared.module';
+@import '../../../assets/shared';
 
 .item {
   @include flex-row(16px, center);

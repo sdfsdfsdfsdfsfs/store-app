@@ -1,5 +1,4 @@
 import styles from './CartContent.module.scss';
-import scss from '../../../assets/_shared.module.scss';
 import { closeCart } from '../openCart';
 import CartItem from '../CartItem/CartItem';
 import ButtonLink from '../../../components/ButtonLink/ButtonLink';
@@ -20,7 +19,7 @@ const CartContent = (props) => {
         <div><span>Shipping</span><span>{(shipping === 0) ? 'FREE' : `$${shipping} USD`}</span></div>
         <div><span>Total</span><span>{`$${total} USD`}</span></div>
       </div>
-      <div className={styles.btn}><ButtonLink href="/checkout" text="Continue to Checkout" scheme={scss.schemePrimary} hover="glow" onClick={closeCart} /></div>
+      <div className={styles.btn}><ButtonLink href="/checkout" text="Continue to Checkout" scheme="scheme-primary" hover="glow" onClick={closeCart} /></div>
     </div>
   )
 }

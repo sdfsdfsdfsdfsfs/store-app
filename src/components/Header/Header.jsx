@@ -1,5 +1,4 @@
 import styles from './Header.module.scss';
-import scss from '../../assets/_shared.module.scss';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import openCart from '../../pages/Cart/openCart';
@@ -24,10 +23,10 @@ const Header = () => {
         <form>
           <label htmlFor="search">Search</label>
           <input type="search" id="search" placeholder="Search..." onFocus={setFocusStyle} onBlur={removeFocusStyle} />
-          <IconButton scheme={scss.schemePrimaryInv} icon="fa-solid fa-magnifying-glass" hover="glow" />
+          <IconButton scheme="scheme-primary_inv" icon="fa-solid fa-magnifying-glass" hover="glow" />
         </form>
-        <IconButton scheme={scss.schemePrimaryInv} icon="fa-solid fa-user" hover="glow" />
-        <IconButton scheme={scss.schemePrimaryInv} icon="fa-solid fa-cart-shopping" hover="glow" onClick={openCart} />
+        <IconButton scheme="scheme-primary_inv" icon="fa-solid fa-user" hover="glow" />
+        <IconButton scheme="scheme-primary_inv" icon="fa-solid fa-cart-shopping" hover="glow" onClick={openCart} />
       </div>
     </header>
   )

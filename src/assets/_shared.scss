@@ -10,12 +10,6 @@ $clr-secondary: #242036;
 $clr-accent: #eed71c;
 $clr-input: #dfdfdf;
 
-// Color Schemes
-$scheme-light: $clr-neutral-dark, $clr-neutral-light;
-$scheme-dark: $clr-neutral-light, $clr-neutral-dark;
-$scheme-primary: $clr-neutral-light, $clr-primary;
-$scheme-primary-inverted: $clr-primary, $clr-neutral-light;
-
 // Mixins
 @mixin flex-row($gap: null, $align: null, $justify: null) {
   display: flex;
@@ -30,11 +24,4 @@ $scheme-primary-inverted: $clr-primary, $clr-neutral-light;
   gap: $gap;
   align-items: $align;
   justify-content: $justify;
-}
-
-:export {
-  schemeLight: $scheme-light;
-  schemeDark: $scheme-dark;
-  schemePrimary: $scheme-primary;
-  schemePrimaryInv: $scheme-primary-inverted;
 }

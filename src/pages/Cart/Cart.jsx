@@ -1,5 +1,4 @@
 import styles from './Cart.module.scss';
-import scss from '../../assets/_shared.module.scss';
 import { closeCart } from './openCart';
 import Overlay from './Overlay/Overlay';
 import IconButton from '../../components/IconButton/IconButton';
@@ -33,9 +32,9 @@ const Cart = (props) => {
       <Overlay onClick={closeCart}/>
       <div id="cart" className={styles.cart}>
         <div className={styles.header}>
-          <IconButton scheme={scss.schemePrimaryInv} icon="fa-solid fa-angle-right" hover="rotate-45" onClick={closeCart} />
+          <IconButton scheme="scheme-primary_inv" icon="fa-solid fa-angle-right" hover="rotate-45" onClick={closeCart} />
           <h2>My Cart</h2>
-          <IconButton scheme={scss.schemeLight} icon="fa-solid fa-angle-right" />
+          <IconButton scheme="scheme-light" icon="fa-solid fa-angle-right" />
         </div>
         {(cart.length > 0) 
           ? <CartContent cart={cart} summary={summary} removeItem={removeItem} changeQuantity={changeQuantity} /> 

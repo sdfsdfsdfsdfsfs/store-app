@@ -1,5 +1,4 @@
 import styles from './Home.module.scss';
-import scss from '../../assets/_shared.module.scss';
 import assets from './assets';
 import cases from '../../data/cases';
 import useDocTitle from '../../hooks/useDocTitle';
@@ -15,7 +14,7 @@ const Home = () => {
 
   return (
     <main className={styles.home}>
-      <Banner text="Phone cases built for the bold" btnText="Shop Now" scheme={scss.schemeLight} hover="outline-light" banner={assets.banner} href="/shop/cases" />
+      <Banner text="Phone cases built for the bold" btnText="Shop Now" scheme="scheme-light" hover="outline-light" href="/shop/cases" banner={assets.banner} />
       <div className={styles.collections}>
         <SectionHeader text="Popular Collections" href="/shop/collections" />
         <div className={styles.cards}>
@@ -28,7 +27,7 @@ const Home = () => {
         <div className={styles.info}>
           <h2>Made to Protect</h2>
           <p>Protective. Inspiring. Unlimited style.</p>
-          <ButtonLink href="/about-us" text="Learn More" scheme={scss.schemePrimaryInv} hover="outline-light" />
+          <ButtonLink href="/about-us" text="Learn More" scheme="scheme-primary" hover="outline-light" />
         </div>
         <div><img src={assets.phoneCase} alt="phone case"/></div>
       </div>

@@ -1,4 +1,4 @@
-@import '../../assets/_shared.module.scss';
+@import '../../assets/shared';
 
 .card {
   @include flex-row(null, flex-end, flex-start);

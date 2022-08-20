@@ -1,5 +1,4 @@
 import styles from './CartItem.module.scss';
-import scss from '../../../assets/_shared.module.scss';
 import collections from '../../../data/collections';
 import cases from '../../../data/cases';
 import IconButton from '../../../components/IconButton/IconButton';
@@ -20,7 +19,7 @@ const CartItem = (props) => {
         <div className={styles.info}>
           <div className={styles.name}>
             <span>{name}</span>
-            <IconButton icon="fa-solid fa-xmark" scheme={scss.schemeLight} hover="rotate-90" onClick={removeItem} dataIndex={dataIndex} />
+            <IconButton icon="fa-solid fa-xmark" scheme="scheme-light" hover="rotate-90" onClick={removeItem} dataIndex={dataIndex} />
           </div>
           <div>{device}</div>
           <div>{collection}</div>

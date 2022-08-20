@@ -1,4 +1,4 @@
-@import '../../assets/_shared.module.scss';
+@import '../../assets/shared';
 
 .info-bar {
   @include flex-row(null, center, space-between);

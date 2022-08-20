@@ -1,4 +1,4 @@
-@import './assets/_shared.module.scss';
+@import './assets/shared';
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;600;700;800&display=swap');
@@ -41,4 +41,22 @@ button {
 
 .hidden {
   visibility: hidden;
+}
+
+// Color schemes
+@mixin color-scheme($color, $background) {
+  color: $color;
+  background: $background;
+}
+
+.scheme-light {
+  @include color-scheme($clr-neutral-dark, $clr-neutral-light);
+}
+
+.scheme-primary {
+  @include color-scheme($clr-neutral-light, $clr-primary);
+}
+
+.scheme-primary_inv {
+  @include color-scheme($clr-primary, $clr-neutral-light);
 }

@@ -1,4 +1,4 @@
-@import '../../assets/_shared.module.scss';
+@import '../../assets/shared';
 
 .header {
   @include flex-row(null, flex-end);
